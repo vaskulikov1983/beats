@@ -1,0 +1,14 @@
+.link {
+    text-decoration: none;
+    color: #292929;
+    display: block;
+    &_white {
+        color: white;
+    }
+
+    &_register {
+        &_low {
+            text-transform: none;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.video {
+    background-color: #F8FAF9;
+    &__container {
+        padding-top: 58px;
+        padding-bottom: 106px;
+    }
+    &__title {
+        text-align: center;
+        margin: 0;
+        margin-bottom: 44px;
+        padding: 0;
+    }
+    &__img {
+        margin: 0 auto;
+        display: block;
+    }
+}

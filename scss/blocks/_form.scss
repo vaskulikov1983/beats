@@ -1,0 +1,213 @@
+.form {
+    display: flex;
+
+    &__left-column {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-right: 26px;
+    }
+
+    &__right-column {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__label {
+        color: white;
+        display: block;
+        margin-bottom: 6px;
+        &_margin {
+            &_zero {
+                margin: 0;
+            }
+        }
+        &_radio {
+            position: relative;
+            padding-left: 35px;
+            &::before {
+                content: '';
+                width: 26px;
+                height: 26px;
+                background-color: white;
+                border-radius: 50%;
+                position: absolute;
+                top: 50%;
+                left: 0px;
+                margin-top: -13px;
+            }
+            &_active::before {
+                content: '';
+                width: 13px;
+                height: 13px;
+                background-color: #E01F3D;
+                border: 6px solid white;
+                border-radius: 50%;
+                position: absolute;
+                top: 50%;
+                left: 0px;
+                margin-top: -13px;
+            }
+        }
+        &_checkbox {
+            position: relative;
+            padding-left: 35px;
+            &::before {
+                content: '';
+                width: 24px;
+                height: 24px;
+                background-color: white;
+                border-radius: 4px;
+                position: absolute;
+                top: 50%;
+                left: 0px;
+                margin-top: -12px;
+                
+            }
+            &_active::before {
+                content: '';
+                width: 24px;
+                height: 24px;
+                background: url("../img/checkmark.svg") no-repeat center;
+                background-size: 10px 8px;
+                background-color: white;
+                
+                border-radius: 4px;
+                position: absolute;
+                top: 50%;
+                left: 0px;
+                margin-top: -12px;
+                
+
+            }
+        }
+    }
+
+    &__input {
+        display: block;
+        height: 58px;
+        background: #ffffff;
+        border-radius: 4px;
+        margin: 0;
+        padding: 0;
+        padding-left: 10px;
+        border: none;
+        outline: none;
+    }
+
+    &__radio {
+        display: none;
+    }
+
+
+
+    &__contacts {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-bottom: 11px;
+    }
+
+    &__name {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    margin-right: 16px;
+    }
+
+    &__phone {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    }
+
+    &__street {
+        display: flex;
+    flex-direction: column;
+    margin-bottom: 11px;
+    }
+
+    &__adress {
+        display: flex;
+    }
+
+    &__house {
+        display: flex;
+    flex-direction: column;
+        width: 106px;
+        margin-right: 13px;
+ 
+    }
+
+    &__housing {
+        display: flex;
+    flex-direction: column;
+    width: 106px;
+    margin-right: 13px;
+
+    }
+
+    &__flat {
+        display: flex;
+    flex-direction: column;
+    width: 106px;
+    margin-right: 13px;
+    
+    }
+
+    &__floor {
+        display: flex;
+    flex-direction: column;
+    width: 106px;
+    }
+
+    &__comment {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 38px;
+    }
+    &__textarea {
+        display: block;
+        width: 100%;
+        min-height: 143px;
+        border: none;
+        outline: none;
+        background: #FFFFFF;
+    border-radius: 4px;
+    padding: 5px 10px;
+    
+    }
+
+    &__payment {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+    }
+
+    &__cash {
+        display: flex;
+        justify-content: row-reverse;
+        align-items: center;
+        margin-right: 15px;
+    }
+    &__card {
+        display: flex;
+        justify-content: row-reverse;
+        align-items: center;
+    }
+
+    &__checkbox {
+        display: none;
+    }
+    &__call {
+        margin-bottom: 44px;
+    }
+    &__buttons {
+        display: flex;
+    }
+}

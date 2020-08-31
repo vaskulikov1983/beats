@@ -1,0 +1,60 @@
+.colors {
+    background: url("../img/wooman-ball.jpg") no-repeat center;
+    background-size: cover;
+    min-height: 652px;
+    position: relative;
+
+    &__container {
+        width: 940px;
+        margin: 0 auto;
+        padding: 115px 15px 0 15px;
+    }
+
+    &__title {
+        color: white;
+    }
+
+    &__tabs {
+        display: flex;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+    }
+
+    &__item {
+        width: 102px;
+        position: relative;
+        &:nth-child(1) {
+            background: #999999;
+        }
+        &:nth-child(2) {
+            background: #151515;;
+        }
+        &:nth-child(3) {
+            background: #E01F3C;
+        }
+    }
+
+    &__title-bookmark {
+        font-family: "Alegreya Sans", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 43px;
+        width: 466px;
+        padding-left: 20px;
+        position: absolute;
+        top: 100%;
+        left: 30px;
+        transform-origin: 0 0;
+        transform: rotate(-90deg);
+    }
+}

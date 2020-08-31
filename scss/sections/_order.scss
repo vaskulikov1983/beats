@@ -1,0 +1,14 @@
+.order {
+    background: #000;
+    &__container {
+        padding-top: 68px;
+        padding-bottom: 85px;
+    }
+
+    &__title {
+        color: white;
+        text-align: center;
+        margin-bottom: 58px;
+    }
+}
+

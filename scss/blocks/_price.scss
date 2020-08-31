@@ -1,0 +1,17 @@
+.price {
+    display: flex;
+    align-items: center;
+    &__value {
+        font-size: 36px;
+        line-height: 60px;
+        margin: 0;
+        padding: 0;
+        margin-right: 19px;
+    }
+    &__button {
+        width: 163px;
+        height: 60px;
+        left: 161px;
+        border-radius: 100px;
+    }
+}

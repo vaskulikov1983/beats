@@ -1,0 +1,46 @@
+.blockquote {
+    margin: 0;
+    padding: 0;
+    background: #f8faf9;
+    display: flex;
+    &__picture {
+        padding-top: 42px;
+        padding-right: 40px;
+        padding-bottom: 38px;
+        padding-left: 42px;
+    }
+
+    &__img {
+        width: 253px;
+        height: 264px;
+    }
+
+    &__content {
+        padding-top: 74px;
+        padding-right: 107px;
+    }
+
+    &__title {
+        font-family: "Play", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        text-transform: none;
+        margin-bottom: 27px;
+    }
+
+    &__text {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 38px;
+    }
+
+    &__cite {
+        font-family: "Play", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+    }
+}

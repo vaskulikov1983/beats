@@ -1,0 +1,24 @@
+.specialization {
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+
+    &__termin {
+        margin: 0;
+        margin-bottom: 5px;
+        padding: 0;
+        text-align: center;
+        color: #000000;
+    }
+
+    &__description {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        color: #666666;
+    }
+}
+
+.team__item:hover .specialization {
+    visibility: visible;
+}

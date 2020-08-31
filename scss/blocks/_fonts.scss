@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Play'),
+         url('/src/fonts/Play-Regular.woff2') format('woff2'),
+         url('/src/fonts/Play-Regular.woff') format('woff'),
+         url('/src/fonts/Play-Regular.ttf') format('truetype'),
+         url('/src/fonts/Play-Regular.eot') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local('Play'),
+         url('/src/fonts/Play-Bold.woff2') format('woff2'),
+         url('/src/fonts/Play-Bold.woff') format('woff'),
+         url('/src/fonts/Play-Bold.ttf') format('truetype'),
+         url('/src/fonts/Play-Bold.eot') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'Alegreya Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Alegreya Sans'),
+         url('/src/fonts/AlegreyaSans-Regular.woff2') format('woff2'),
+         url('/src/fonts/AlegreyaSans-Regular.woff') format('woff'),
+         url('/src/fonts/AlegreyaSans-Regular.ttf') format('truetype'),
+         url('/src/fonts/AlegreyaSans-Regular.eot') format('embedded-opentype');
+  }

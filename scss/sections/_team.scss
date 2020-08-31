@@ -1,0 +1,54 @@
+.team {
+    padding-top: 70px;
+    padding-bottom: 50px;
+    &__containter {
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 53px;
+    }
+
+    &__name {
+        margin-bottom: 12px;
+        padding-right: 5px;
+        text-align: center;
+        position: relative;
+        &:after {
+            content: '';
+            position: relative;
+            top: 15px;
+            left: 5px;
+            width: 0;
+            height: 0;
+            border-top: 8px solid #E01F3D;;
+            border-right: 4px solid transparent;
+            border-left: 4px solid transparent;
+        }
+    }
+
+    
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        width: 220px;
+        cursor: pointer;
+    }
+
+    &__img {
+        width: 220px;
+        height: 290px;
+        margin-bottom: 21px;
+    }
+
+    &__specialization {
+    }
+}
+

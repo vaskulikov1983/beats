@@ -1,0 +1,31 @@
+@mixin zero {
+    margin: 0;
+    padding: 0;
+}
+
+.features {
+    @include zero;
+    display: flex;
+    align-items: flex-start;
+    
+
+    &__item {
+        @include zero;
+        margin-right: 44px;
+        flex-basis: 104px;
+    }
+
+    &__termin {
+        @include zero;
+        margin-bottom: 1px;
+    }
+
+    &__description {
+        @include zero;
+        font-family: Play;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+    }
+}

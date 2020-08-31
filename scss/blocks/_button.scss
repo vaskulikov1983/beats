@@ -1,0 +1,24 @@
+.button {
+    width: 163px;
+    height: 54px;
+    background: #e01f3d;
+    border-radius: 100px;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+    &__text{
+        &_hidden{
+            visibility: hidden;
+        }
+    }
+    &_clean {
+        background: none;
+        text-transform: none;
+        font-weight: normal;
+    }
+}

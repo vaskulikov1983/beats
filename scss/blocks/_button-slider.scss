@@ -1,0 +1,21 @@
+.button-slider {
+    border: none;
+    width: 24px;
+    height: 40px;
+    align-self: center;
+    background: url("../img/arrow-left.svg") no-repeat center;
+    background-size: 24px 40px;
+    cursor: pointer;
+    outline: none;
+
+    &_prev {
+        order: 10;
+        margin-left: -24px;
+    }
+    
+    &_next {
+        order: -10;
+        transform: rotate(180deg);
+        margin-right: -24px;
+    }
+}

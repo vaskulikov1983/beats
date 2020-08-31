@@ -1,0 +1,18 @@
+.header {
+    background-color: #f5f5f5;
+    padding: 24px 0;
+
+    &__container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__logo {
+        margin-right: 38px;
+    }
+
+    &__phone {
+        margin-left: 47px;
+    }
+}
