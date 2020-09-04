@@ -1,7 +1,8 @@
 .promo {
+    
     &__container {
         padding-top: 100px;
-        padding-bottom: 95px;
+        padding-bottom: 26px;
     }
 
     &__title {
@@ -11,28 +12,34 @@
 
     &__subtitle {
         text-align: center;
-        width: 590px;
+        max-width: 590px;
         margin: 0 auto;
         margin-bottom: 62px;
     }
 
     &__advantages-list {
-        margin: 0;
+        margin: 0 -24px;
         padding: 0;
         list-style: none;
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: space-around;
         align-items: flex-start;
     }
 
     &__advantages-item {
-        width: 276px;
+        flex-basis: 1 1 276px;
+        //  width: 276px;
         padding-top: 152px;
         text-align: center;
         position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: 0 24px;
+        margin-bottom: 70px;
+
+
     }
 
     &__advantages-item::before {
@@ -76,7 +83,7 @@
         padding: 0;
         width: 247px;
     }
-
+/*
     &__advantages-decor {
         width: 22px;
         height: 22px;
@@ -110,5 +117,5 @@
             margin-top: -7px;
             right: -24px;
         }
-    }
+    }*/
 }

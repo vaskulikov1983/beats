@@ -1,22 +1,33 @@
 .form {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+    margin: 0 -14px;
 
     &__left-column {
-        flex-basis: 50%;
+        flex: 1 1 30%;
         display: flex;
         flex-direction: column;
-        margin-right: 26px;
+        box-sizing: border-box;
+        max-width: 460px;
+        margin: 0 14px;
     }
 
     &__right-column {
-        flex-basis: 50%;
+        flex: 1 1 30%;
         display: flex;
         flex-direction: column;
+        box-sizing: border-box;
+        max-width: 460px;
+        margin: 0 14px;
+
     }
 
     &__label {
         color: white;
         display: block;
+        box-sizing: border-box;
         margin-bottom: 6px;
         &_margin {
             &_zero {
@@ -27,7 +38,7 @@
             position: relative;
             padding-left: 35px;
             &::before {
-                content: '';
+                content: "";
                 width: 26px;
                 height: 26px;
                 background-color: white;
@@ -38,10 +49,10 @@
                 margin-top: -13px;
             }
             &_active::before {
-                content: '';
+                content: "";
                 width: 13px;
                 height: 13px;
-                background-color: #E01F3D;
+                background-color: #e01f3d;
                 border: 6px solid white;
                 border-radius: 50%;
                 position: absolute;
@@ -54,7 +65,7 @@
             position: relative;
             padding-left: 35px;
             &::before {
-                content: '';
+                content: "";
                 width: 24px;
                 height: 24px;
                 background-color: white;
@@ -63,29 +74,25 @@
                 top: 50%;
                 left: 0px;
                 margin-top: -12px;
-                
             }
             &_active::before {
-                content: '';
+                content: "";
                 width: 24px;
                 height: 24px;
                 background: url("../img/checkmark.svg") no-repeat center;
                 background-size: 10px 8px;
                 background-color: white;
-                
+
                 border-radius: 4px;
                 position: absolute;
                 top: 50%;
                 left: 0px;
                 margin-top: -12px;
-                
-
             }
         }
     }
 
     &__input {
-        display: block;
         height: 58px;
         background: #ffffff;
         border-radius: 4px;
@@ -94,13 +101,12 @@
         padding-left: 10px;
         border: none;
         outline: none;
+        box-sizing: border-box;
     }
 
     &__radio {
         display: none;
     }
-
-
 
     &__contacts {
         display: flex;
@@ -110,77 +116,103 @@
     }
 
     &__name {
-    flex-basis: 50%;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-    margin-right: 16px;
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        margin-right: 16px;
+        box-sizing: border-box;
     }
 
     &__phone {
-    flex-basis: 50%;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
 
     &__street {
         display: flex;
-    flex-direction: column;
-    margin-bottom: 11px;
+        flex-direction: column;
+        margin-bottom: 11px;
+        box-sizing: border-box;
     }
 
     &__adress {
         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        box-sizing: border-box;
+        margin-bottom: 11px;
     }
 
     &__house {
         display: flex;
-    flex-direction: column;
+        flex-direction: column;
+        align-items: flex-start;
+        box-sizing: border-box;
         width: 106px;
         margin-right: 13px;
- 
+        & input {
+            width: 100%;
+        }
     }
 
     &__housing {
         display: flex;
-    flex-direction: column;
-    width: 106px;
-    margin-right: 13px;
-
+        flex-direction: column;
+        align-items: flex-start;
+        box-sizing: border-box;
+        width: 106px;
+        margin-right: 13px;
+        & input {
+            width: 100%;
+        }
     }
 
     &__flat {
         display: flex;
-    flex-direction: column;
-    width: 106px;
-    margin-right: 13px;
-    
+        flex-direction: column;
+        align-items: flex-start;
+        box-sizing: border-box;
+        width: 106px;
+        margin-right: 13px;
+        & input {
+            width: 100%;
+        }
     }
 
     &__floor {
         display: flex;
-    flex-direction: column;
-    width: 106px;
+        flex-direction: column;
+        align-items: flex-start;
+        box-sizing: border-box;
+        width: 106px;
+        & input {
+            width: 100%;
+        }
     }
 
     &__comment {
         display: flex;
         flex-direction: column;
+        max-width: 100%;
         margin-bottom: 38px;
     }
     &__textarea {
         display: block;
-        width: 100%;
         min-height: 143px;
         border: none;
         outline: none;
-        background: #FFFFFF;
-    border-radius: 4px;
-    padding: 5px 10px;
-    
+        background: #ffffff;
+        border-radius: 4px;
+        padding: 5px 10px;
+        max-width: 100%;
+        resize: none;
     }
 
     &__payment {

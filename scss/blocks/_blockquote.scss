@@ -1,23 +1,27 @@
 .blockquote {
     margin: 0;
-    padding: 0;
+    padding: 42px;
+    padding-bottom: 40px;
     background: #f8faf9;
     display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
     &__picture {
-        padding-top: 42px;
-        padding-right: 40px;
-        padding-bottom: 38px;
-        padding-left: 42px;
+        margin-right: 40px;
+
     }
 
     &__img {
-        width: 253px;
-        height: 264px;
+        width: 100%;
+        object-fit: cover;
+
     }
 
     &__content {
-        padding-top: 74px;
-        padding-right: 107px;
+        max-width: 498px;
+        padding-top: 32px;
+
     }
 
     &__title {

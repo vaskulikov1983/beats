@@ -1,7 +1,8 @@
 .team {
     padding-top: 70px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     &__containter {
+        
     }
 
     &__title {
@@ -30,16 +31,20 @@
     
 
     &__list {
-        margin: 0;
+        margin: 0 -10px;
         padding: 0;
+
         list-style: none;
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 
     &__item {
         width: 220px;
         cursor: pointer;
+        margin: 0 10px;
+        padding-bottom: 30px;
     }
 
     &__img {
@@ -49,6 +54,7 @@
     }
 
     &__specialization {
+        
     }
 }
 

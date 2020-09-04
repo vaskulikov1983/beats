@@ -1,8 +1,7 @@
 .map {
     margin-bottom: 20px;
-    &__img {
-        width: 100%;
-        min-height: 652px;
-        object-fit: cover;
-    }
+    box-sizing: border-box;
+    background: url('../img/map.jpg') no-repeat center;
+    background-size: cover;
+    min-height: 652px;
 }

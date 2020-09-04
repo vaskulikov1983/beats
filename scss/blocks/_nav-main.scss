@@ -8,15 +8,18 @@
         padding: 0;
         list-style: none;
         display: flex;
-        justify-content: flex-start;
+        flex-wrap: wrap;
+        justify-content: center;
+
         align-items: center;
     }
     &__item {
-        margin-right: 28px;
+        margin-right: 10px;
+        margin-left: 10px;
     }
 
     &__item:last-child {
-        margin-right: 0px;
+        //margin-right: 0px;
     }
     &__link {
         font-family: 'Alegreya Sans', sans-serif;
