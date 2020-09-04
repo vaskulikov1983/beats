@@ -9,6 +9,7 @@
 
     &__picture {
         margin-right: 40px;
+        width: 30%;
 
     }
 
@@ -19,6 +20,7 @@
     }
 
     &__content {
+        flex: 1;
         max-width: 498px;
         padding-top: 32px;
 
