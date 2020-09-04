@@ -6,12 +6,12 @@
         line-height: 3.75rem;
         margin: 0;
         padding: 0;
-        margin-right: 19px;
+        margin-right: rem(19px);
     }
     &__button {
-        width: 163px;
-        height: 60px;
-        left: 161px;
-        border-radius: 100px;
+        width: rem(163px);
+        height: rem(60px);
+        left: rem(161px);
+        border-radius: rem(100px);
     }
 }

@@ -3,15 +3,15 @@
     flex-wrap: wrap;
     justify-content: space-around;
     box-sizing: border-box;
-    margin: 0 -14px;
+    margin: 0 rem(-14px);
 
     &__left-column {
         flex: 1 1 30%;
         display: flex;
         flex-direction: column;
         box-sizing: border-box;
-        max-width: 460px;
-        margin: 0 14px;
+        max-width: rem(460px);
+        margin: 0 rem(14px);
     }
 
     &__right-column {
@@ -19,8 +19,8 @@
         display: flex;
         flex-direction: column;
         box-sizing: border-box;
-        max-width: 460px;
-        margin: 0 14px;
+        max-width: rem(460px);
+        margin: 0 rem(14px);
 
     }
 
@@ -28,7 +28,7 @@
         color: white;
         display: block;
         box-sizing: border-box;
-        margin-bottom: 6px;
+        margin-bottom: rem(6px);
         &_margin {
             &_zero {
                 margin: 0;
@@ -36,69 +36,69 @@
         }
         &_radio {
             position: relative;
-            padding-left: 35px;
+            padding-left: rem(35px);
             &::before {
                 content: "";
-                width: 26px;
-                height: 26px;
+                width: rem(26px);
+                height: rem(26px);
                 background-color: white;
                 border-radius: 50%;
                 position: absolute;
                 top: 50%;
-                left: 0px;
-                margin-top: -13px;
+                left: rem(0px);
+                margin-top: rem(-13px);
             }
             &_active::before {
                 content: "";
-                width: 13px;
-                height: 13px;
+                width: rem(13px);
+                height: rem(13px);
                 background-color: #e01f3d;
-                border: 6px solid white;
+                border: rem(6px) solid white;
                 border-radius: 50%;
                 position: absolute;
                 top: 50%;
-                left: 0px;
-                margin-top: -13px;
+                left: rem(0px);
+                margin-top: rem(-13px);
             }
         }
         &_checkbox {
             position: relative;
-            padding-left: 35px;
+            padding-left: rem(35px);
             &::before {
                 content: "";
-                width: 24px;
-                height: 24px;
+                width: rem(24px);
+                height: rem(24px);
                 background-color: white;
-                border-radius: 4px;
+                border-radius: rem(4px);
                 position: absolute;
                 top: 50%;
-                left: 0px;
-                margin-top: -12px;
+                left: rem(0px);
+                margin-top: rem(-12px);
             }
             &_active::before {
                 content: "";
-                width: 24px;
-                height: 24px;
+                width: rem(24px);
+                height: rem(24px);
                 background: url("../img/checkmark.svg") no-repeat center;
-                background-size: 10px 8px;
+                background-size: rem(10px) rem(8px);
                 background-color: white;
 
-                border-radius: 4px;
+                border-radius: rem(4px);
                 position: absolute;
                 top: 50%;
-                left: 0px;
-                margin-top: -12px;
+                left: rem(0px);
+                margin-top: rem(-12px);
             }
         }
     }
 
     &__input {
-        height: 58px;
+        height: rem(58px);
         background: #ffffff;
-        border-radius: 4px;
+        border-radius: rem(4px);
         margin: 0;
         padding: 0;
-        padding-left: 10px;
+        padding-left: rem(10px);
         border: none;
         outline: none;
         box-sizing: border-box;
@@ -112,7 +112,7 @@
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        margin-bottom: 11px;
+        margin-bottom: rem(11px);
     }
 
     &__name {
@@ -121,7 +121,7 @@
         flex-direction: column;
         margin: 0;
         padding: 0;
-        margin-right: 16px;
+        margin-right: rem(16px);
         box-sizing: border-box;
     }
 
@@ -137,7 +137,7 @@
     &__street {
         display: flex;
         flex-direction: column;
-        margin-bottom: 11px;
+        margin-bottom: rem(11px);
         box-sizing: border-box;
     }
 
@@ -147,7 +147,7 @@
         justify-content: space-between;
         flex-wrap: nowrap;
         box-sizing: border-box;
-        margin-bottom: 11px;
+        margin-bottom: rem(11px);
     }
 
     &__house {
@@ -155,8 +155,8 @@
         flex-direction: column;
         align-items: flex-start;
         box-sizing: border-box;
-        width: 106px;
-        margin-right: 13px;
+        width: rem(106px);
+        margin-right: rem(13px);
         & input {
             width: 100%;
         }
@@ -167,8 +167,8 @@
         flex-direction: column;
         align-items: flex-start;
         box-sizing: border-box;
-        width: 106px;
-        margin-right: 13px;
+        width: rem(106px);
+        margin-right: rem(13px);
         & input {
             width: 100%;
         }
@@ -179,8 +179,8 @@
         flex-direction: column;
         align-items: flex-start;
         box-sizing: border-box;
-        width: 106px;
-        margin-right: 13px;
+        width: rem(106px);
+        margin-right: rem(13px);
         & input {
             width: 100%;
         }
@@ -191,7 +191,7 @@
         flex-direction: column;
         align-items: flex-start;
         box-sizing: border-box;
-        width: 106px;
+        width: rem(106px);
         & input {
             width: 100%;
         }
@@ -201,16 +201,16 @@
         display: flex;
         flex-direction: column;
         max-width: 100%;
-        margin-bottom: 38px;
+        margin-bottom: rem(38px);
     }
     &__textarea {
         display: block;
-        min-height: 143px;
+        min-height: rem(143px);
         border: none;
         outline: none;
         background: #ffffff;
-        border-radius: 4px;
-        padding: 5px 10px;
+        border-radius: rem(4px);
+        padding: rem(5px) rem(10px);
         max-width: 100%;
         resize: none;
     }
@@ -218,14 +218,14 @@
     &__payment {
         display: flex;
         justify-content: flex-start;
-        margin-bottom: 20px;
+        margin-bottom: rem(20px);
     }
 
     &__cash {
         display: flex;
         justify-content: row-reverse;
         align-items: center;
-        margin-right: 15px;
+        margin-right: rem(15px);
     }
     &__card {
         display: flex;
@@ -237,7 +237,7 @@
         display: none;
     }
     &__call {
-        margin-bottom: 44px;
+        margin-bottom: rem(44px);
     }
     &__buttons {
         display: flex;

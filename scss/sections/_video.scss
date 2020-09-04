@@ -1,19 +1,19 @@
 .video {
     background-color: #F8FAF9;
     &__container {
-        padding-top: 58px;
-        padding-bottom: 106px;
+        padding-top: rem(58px);
+        padding-bottom: rem(106px);
     }
     &__title {
         text-align: center;
         margin: 0;
-        margin-bottom: 44px;
+        margin-bottom: rem(44px);
         padding: 0;
     }
     &__img {
         margin: 0 auto;
         display: block;
         width: 100%;
-        max-width: 662px;
+        max-width: rem(662px);
     }
 }

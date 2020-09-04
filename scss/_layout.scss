@@ -1,0 +1,15 @@
+html {font-family: 'Play', sans-serif;
+    font-weight: 400;
+    font-size: $baseFontSize;
+    line-height: 1.1875rem;
+    color: #292929;
+    //overflow-x: hidden;
+
+    @include tablets {
+        font-size: $baseFontSize - 1px;
+    }
+
+    @include phones {
+        font-size: $baseFontSize - 2px;
+    }
+}

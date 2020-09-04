@@ -2,38 +2,54 @@
     background-color: #f5f5f5;
     
     &__container {
-        padding-top: 66px;
-        padding-bottom: 50px;
+        padding-top: rem(66px);
+        padding-bottom: rem(50px);
         background: url('../img/headphones-main.png') no-repeat;
-        background-position: 84% 20px;
-        background-size: 489px;
+        background-position: 84% rem(20px);
+        background-size: rem(489px);
+        @include tablets {
+            height: 90vh;
+        }
     }
 
     &__title {
-        width: 400px;
+        width: rem(400px);
         margin: 0;
         padding: 0;
-        margin-bottom: 22px;
+        margin-bottom: rem(22px);
         display: block;
+        @include tablets {
+            width: 87%;
+            margin: 0 auto;
+            text-align: center;
+        }
     }
     &__subtitle {
         font-family: 'Alegreya Sans', sans-serif;
         font-size: 1.3125rem;
         line-height: 1.5625rem;
-        width: 332px;
+        width: rem(332px);
         margin: 0;
-        margin-bottom: 36px;
+        margin-bottom: rem(36px);
         padding: 0;
+        @include tablets {
+            width: 48%;
+            margin: 0 auto;
+            text-align: center;
+        }
     }
 
     &__button {
-        margin-bottom: 72px;
+        margin-bottom: rem(72px);
+        @include tablets {
+            margin: 0 auto;
+        }
     }
 
     &__advantages-list {
         margin: 0;
         padding: 0;
-        max-width: 522px;
+        max-width: rem(522px);
         list-style: none;
         display: flex;
         flex-wrap: nowrap;
@@ -42,22 +58,22 @@
     }
 
     &__advantages-item {
-        width: 166px;
-        height: 56px;
+        width: rem(166px);
+        height: rem(56px);
         margin: 0;
         padding: 0;
-        padding-left: 52px;
+        padding-left: rem(52px);
         line-height: 1.125rem;
         position: relative;
     }
 
     &__advantages-item::before {
         content: '';
-        width: 41px;
-        height: 41px;
+        width: rem(41px);
+        height: rem(41px);
         position: absolute;
-        top: -2px;
-        left: 0px;
+        top: rem(-2px);
+        left: rem(0px);
     }
 
     &__advantages-item:nth-child(1)::before {

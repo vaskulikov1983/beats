@@ -1,13 +1,13 @@
 .colors {
     background: url("../img/wooman-ball.jpg") no-repeat center;
     background-size: cover;
-    min-height: 652px;
+    min-height: rem(652px);
     position: relative;
 
     &__container {
-        width: 940px;
+        width: rem(940px);
         margin: 0 auto;
-        padding: 115px 15px 0 15px;
+        padding: rem(115px) rem(15px) 0 rem(15px);
     }
 
     &__title {
@@ -30,7 +30,7 @@
     }
 
     &__item {
-        width: 102px;
+        width: rem(102px);
         position: relative;
         &:nth-child(1) {
             background: #999999;
@@ -49,11 +49,11 @@
         font-weight: bold;
         font-size: 2.25rem;
         line-height: 2.6875rem;
-        width: 466px;
-        padding-left: 20px;
+        width: rem(466px);
+        padding-left: rem(20px);
         position: absolute;
         top: 100%;
-        left: 30px;
+        left: rem(30px);
         transform-origin: 0 0;
         transform: rotate(-90deg);
     }

@@ -1,9 +1,9 @@
 .button-slider {
     border: none;
-    width: 24px;
-    height: 40px;
+    width: rem(24px);
+    height: rem(40px);
     background: url("../img/arrow-left.svg") no-repeat center;
-    background-size: 24px 40px;
+    background-size: rem(24px) rem(40px);
     cursor: pointer;
     outline: none;
     position: absolute;
@@ -11,13 +11,13 @@
     &_prev {
         top: 50%;
         left: 0%;
-        margin-left: 20px;
+        margin-left: rem(20px);
     }
     
     &_next {
         transform: rotate(180deg);
         top: 50%;
         right: 0%;
-        margin-right: 20px;
+        margin-right: rem(20px);
     }
 }

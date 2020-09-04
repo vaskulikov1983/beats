@@ -11,13 +11,13 @@
 
     &__item {
         @include zero;
-        margin-right: 44px;
-        flex-basis: 104px;
+        margin-right: rem(44px);
+        flex-basis: rem(104px);
     }
 
     &__termin {
         @include zero;
-        margin-bottom: 1px;
+        margin-bottom: rem(1px);
     }
 
     &__description {

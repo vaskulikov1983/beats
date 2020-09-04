@@ -1,10 +1,21 @@
-html, body {
+html {
   font-family: 'Play', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.1875rem;
   color: #292929;
-  overflow-x: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
 }
 
 @font-face {
@@ -47,20 +58,27 @@ html, body {
 
 .container {
   width: 100%;
-  max-width: 1100px;
-  padding: 0 80px;
+  max-width: 68.75rem;
+  padding: 0 5rem;
   margin: 0 auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
+@media screen and (max-width: 768px) {
+  .container {
+    height: 100vh;
+    padding: 0 1.375rem;
+  }
+}
+
 .visually-hidden {
   position: absolute;
-  clip: rect(1px, 1px, 1px, 1px);
+  clip: rect(0.0625rem, 0.0625rem, 0.0625rem, 1px);
   padding: 0;
   border: 0;
-  height: 1px;
-  width: 1px;
+  height: 0.0625rem;
+  width: 0.0625rem;
   overflow: hidden;
 }
 
@@ -94,10 +112,10 @@ html, body {
 }
 
 .button {
-  width: 163px;
-  height: 54px;
+  width: 10.1875rem;
+  height: 3.375rem;
   background: #e01f3d;
-  border-radius: 100px;
+  border-radius: 6.25rem;
   border: none;
   color: #ffffff;
   font-weight: bold;
@@ -125,14 +143,14 @@ html, body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: -20px;
+  margin-right: -1.25rem;
 }
 
 .social__icon {
-  width: 30px;
-  height: 30px;
+  width: 1.875rem;
+  height: 1.875rem;
   fill: #B3B3B3;
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 
 .social__icon:last-child {
@@ -151,13 +169,13 @@ html, body {
   line-height: 1.5rem;
   margin: 0;
   padding: 0;
-  margin-bottom: 5px;
+  margin-bottom: 0.3125rem;
 }
 
 .blockquote {
   margin: 0;
-  padding: 42px;
-  padding-bottom: 40px;
+  padding: 2.625rem;
+  padding-bottom: 2.5rem;
   background: #f8faf9;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -170,7 +188,7 @@ html, body {
 }
 
 .blockquote__picture {
-  margin-right: 40px;
+  margin-right: 2.5rem;
   width: 30%;
 }
 
@@ -185,8 +203,8 @@ html, body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  max-width: 498px;
-  padding-top: 32px;
+  max-width: 31.125rem;
+  padding-top: 2rem;
 }
 
 .blockquote__title {
@@ -196,13 +214,13 @@ html, body {
   font-size: 1.5rem;
   line-height: 1.75rem;
   text-transform: none;
-  margin-bottom: 27px;
+  margin-bottom: 1.6875rem;
 }
 
 .blockquote__text {
   margin: 0;
   padding: 0;
-  margin-bottom: 38px;
+  margin-bottom: 2.375rem;
 }
 
 .blockquote__cite {
@@ -223,7 +241,7 @@ html, body {
       justify-content: space-around;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 0 -14px;
+  margin: 0 -0.875rem;
 }
 
 .form__left-column {
@@ -239,8 +257,8 @@ html, body {
           flex-direction: column;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  max-width: 460px;
-  margin: 0 14px;
+  max-width: 28.75rem;
+  margin: 0 0.875rem;
 }
 
 .form__right-column {
@@ -256,8 +274,8 @@ html, body {
           flex-direction: column;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  max-width: 460px;
-  margin: 0 14px;
+  max-width: 28.75rem;
+  margin: 0 0.875rem;
 }
 
 .form__label {
@@ -265,7 +283,7 @@ html, body {
   display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin-bottom: 6px;
+  margin-bottom: 0.375rem;
 }
 
 .form__label_margin_zero {
@@ -274,72 +292,72 @@ html, body {
 
 .form__label_radio {
   position: relative;
-  padding-left: 35px;
+  padding-left: 2.1875rem;
 }
 
 .form__label_radio::before {
   content: "";
-  width: 26px;
-  height: 26px;
+  width: 1.625rem;
+  height: 1.625rem;
   background-color: white;
   border-radius: 50%;
   position: absolute;
   top: 50%;
-  left: 0px;
-  margin-top: -13px;
+  left: 0rem;
+  margin-top: -0.8125rem;
 }
 
 .form__label_radio_active::before {
   content: "";
-  width: 13px;
-  height: 13px;
+  width: 0.8125rem;
+  height: 0.8125rem;
   background-color: #e01f3d;
-  border: 6px solid white;
+  border: 0.375rem solid white;
   border-radius: 50%;
   position: absolute;
   top: 50%;
-  left: 0px;
-  margin-top: -13px;
+  left: 0rem;
+  margin-top: -0.8125rem;
 }
 
 .form__label_checkbox {
   position: relative;
-  padding-left: 35px;
+  padding-left: 2.1875rem;
 }
 
 .form__label_checkbox::before {
   content: "";
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
   background-color: white;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   position: absolute;
   top: 50%;
-  left: 0px;
-  margin-top: -12px;
+  left: 0rem;
+  margin-top: -0.75rem;
 }
 
 .form__label_checkbox_active::before {
   content: "";
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
   background: url("../img/checkmark.svg") no-repeat center;
-  background-size: 10px 8px;
+  background-size: 0.625rem 0.5rem;
   background-color: white;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   position: absolute;
   top: 50%;
-  left: 0px;
-  margin-top: -12px;
+  left: 0rem;
+  margin-top: -0.75rem;
 }
 
 .form__input {
-  height: 58px;
+  height: 3.625rem;
   background: #ffffff;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   margin: 0;
   padding: 0;
-  padding-left: 10px;
+  padding-left: 0.625rem;
   border: none;
   outline: none;
   -webkit-box-sizing: border-box;
@@ -361,7 +379,7 @@ html, body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin-bottom: 11px;
+  margin-bottom: 0.6875rem;
 }
 
 .form__name {
@@ -376,7 +394,7 @@ html, body {
           flex-direction: column;
   margin: 0;
   padding: 0;
-  margin-right: 16px;
+  margin-right: 1rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -405,7 +423,7 @@ html, body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 11px;
+  margin-bottom: 0.6875rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -425,7 +443,7 @@ html, body {
       flex-wrap: nowrap;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin-bottom: 11px;
+  margin-bottom: 0.6875rem;
 }
 
 .form__house {
@@ -441,8 +459,8 @@ html, body {
           align-items: flex-start;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 106px;
-  margin-right: 13px;
+  width: 6.625rem;
+  margin-right: 0.8125rem;
 }
 
 .form__house input {
@@ -462,8 +480,8 @@ html, body {
           align-items: flex-start;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 106px;
-  margin-right: 13px;
+  width: 6.625rem;
+  margin-right: 0.8125rem;
 }
 
 .form__housing input {
@@ -483,8 +501,8 @@ html, body {
           align-items: flex-start;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 106px;
-  margin-right: 13px;
+  width: 6.625rem;
+  margin-right: 0.8125rem;
 }
 
 .form__flat input {
@@ -504,7 +522,7 @@ html, body {
           align-items: flex-start;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 106px;
+  width: 6.625rem;
 }
 
 .form__floor input {
@@ -520,17 +538,17 @@ html, body {
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 100%;
-  margin-bottom: 38px;
+  margin-bottom: 2.375rem;
 }
 
 .form__textarea {
   display: block;
-  min-height: 143px;
+  min-height: 8.9375rem;
   border: none;
   outline: none;
   background: #ffffff;
-  border-radius: 4px;
-  padding: 5px 10px;
+  border-radius: 0.25rem;
+  padding: 0.3125rem 0.625rem;
   max-width: 100%;
   resize: none;
 }
@@ -542,7 +560,7 @@ html, body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .form__cash {
@@ -555,7 +573,7 @@ html, body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 15px;
+  margin-right: 0.9375rem;
 }
 
 .form__card {
@@ -575,7 +593,7 @@ html, body {
 }
 
 .form__call {
-  margin-bottom: 44px;
+  margin-bottom: 2.75rem;
 }
 
 .form__buttons {
@@ -598,15 +616,15 @@ html, body {
 .features__item {
   margin: 0;
   padding: 0;
-  margin-right: 44px;
-  -ms-flex-preferred-size: 104px;
-      flex-basis: 104px;
+  margin-right: 2.75rem;
+  -ms-flex-preferred-size: 6.5rem;
+      flex-basis: 6.5rem;
 }
 
 .features__termin {
   margin: 0;
   padding: 0;
-  margin-bottom: 1px;
+  margin-bottom: 0.0625rem;
 }
 
 .features__description {
@@ -621,7 +639,13 @@ html, body {
 
 .header {
   background-color: #f5f5f5;
-  padding: 24px 0;
+  padding: 1.5rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 0;
+  }
 }
 
 .header__container {
@@ -636,18 +660,33 @@ html, body {
           align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+  .header__container {
+    height: 10vh;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .header__logo {
-  margin-right: 38px;
+  margin-right: 2.375rem;
 }
 
 .header__phone {
-  margin-left: 47px;
+  margin-left: 2.9375rem;
 }
 
 .nav-main {
   margin: 0;
   padding: 0;
-  width: 660px;
+  width: 41.25rem;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-main {
+    display: none;
+  }
 }
 
 .nav-main__list {
@@ -668,8 +707,8 @@ html, body {
 }
 
 .nav-main__item {
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 0.625rem;
+  margin-left: 0.625rem;
 }
 
 .nav-main__link {
@@ -684,19 +723,25 @@ html, body {
   line-height: 1.125rem;
   display: block;
   position: relative;
-  padding-bottom: 3px;
-  min-width: 154px;
+  padding-bottom: 0.1875rem;
+  min-width: 9.625rem;
+}
+
+@media screen and (max-width: 768px) {
+  .phone {
+    display: none;
+  }
 }
 
 .phone:before {
   content: '';
-  width: 14px;
-  height: 14px;
+  width: 0.875rem;
+  height: 0.875rem;
   background: url("../img/icons/phone.svg") no-repeat center;
   background-size: cover;
   position: absolute;
-  top: 2px;
-  left: -20px;
+  top: 0.125rem;
+  left: -1.25rem;
 }
 
 .start-screen {
@@ -704,39 +749,67 @@ html, body {
 }
 
 .start-screen__container {
-  padding-top: 66px;
-  padding-bottom: 50px;
+  padding-top: 4.125rem;
+  padding-bottom: 3.125rem;
   background: url("../img/headphones-main.png") no-repeat;
-  background-position: 84% 20px;
-  background-size: 489px;
+  background-position: 84% 1.25rem;
+  background-size: 30.5625rem;
+}
+
+@media screen and (max-width: 768px) {
+  .start-screen__container {
+    height: 90vh;
+  }
 }
 
 .start-screen__title {
-  width: 400px;
+  width: 25rem;
   margin: 0;
   padding: 0;
-  margin-bottom: 22px;
+  margin-bottom: 1.375rem;
   display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .start-screen__title {
+    width: 87%;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 
 .start-screen__subtitle {
   font-family: 'Alegreya Sans', sans-serif;
   font-size: 1.3125rem;
   line-height: 1.5625rem;
-  width: 332px;
+  width: 20.75rem;
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 2.25rem;
   padding: 0;
 }
 
+@media screen and (max-width: 768px) {
+  .start-screen__subtitle {
+    width: 48%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
 .start-screen__button {
-  margin-bottom: 72px;
+  margin-bottom: 4.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .start-screen__button {
+    margin: 0 auto;
+  }
 }
 
 .start-screen__advantages-list {
   margin: 0;
   padding: 0;
-  max-width: 522px;
+  max-width: 32.625rem;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -752,22 +825,22 @@ html, body {
 }
 
 .start-screen__advantages-item {
-  width: 166px;
-  height: 56px;
+  width: 10.375rem;
+  height: 3.5rem;
   margin: 0;
   padding: 0;
-  padding-left: 52px;
+  padding-left: 3.25rem;
   line-height: 1.125rem;
   position: relative;
 }
 
 .start-screen__advantages-item::before {
   content: '';
-  width: 41px;
-  height: 41px;
+  width: 2.5625rem;
+  height: 2.5625rem;
   position: absolute;
-  top: -2px;
-  left: 0px;
+  top: -0.125rem;
+  left: 0rem;
 }
 
 .start-screen__advantages-item:nth-child(1)::before {
@@ -787,67 +860,67 @@ html, body {
 
 .nav-sections {
   position: fixed;
-  top: 150px;
-  right: 0px;
+  top: 9.375rem;
+  right: 0rem;
 }
 
 .promo {
   /*
     &__advantages-decor {
-        width: 22px;
-        height: 22px;
-        margin: 0 23px;
+        width: rem(22px);
+        height: rem(22px);
+        margin: 0 rem(23px);
         background-color: #F2F5F4;;
         border-radius: 50%;
         position: absolute;
-        top: 60px;
-        right: -60px;
+        top: rem(60px);
+        right: rem(-60px);
 
         &::before {
             content: '';
-            width: 14px;
-            height: 14px;
+            width: rem(14px);
+            height: rem(14px);
             background-color: #F2F5F4;
             border-radius: 50%;
             position: absolute;
             top: 50%;
-            margin-top: -7px;
-            left: -24px;
+            margin-top: rem(-7px);
+            left: rem(-24px);
         }
 
         &::after {
             content: '';
-            width: 14px;
-            height: 14px;
+            width: rem(14px);
+            height: rem(14px);
             background-color: #F2F5F4;
             border-radius: 50%;
             position: absolute;
             top: 50%;
-            margin-top: -7px;
-            right: -24px;
+            margin-top: rem(-7px);
+            right: rem(-24px);
         }
     }*/
 }
 
 .promo__container {
-  padding-top: 100px;
-  padding-bottom: 26px;
+  padding-top: 6.25rem;
+  padding-bottom: 1.625rem;
 }
 
 .promo__title {
   text-align: center;
-  margin-bottom: 18px;
+  margin-bottom: 1.125rem;
 }
 
 .promo__subtitle {
   text-align: center;
-  max-width: 590px;
+  max-width: 36.875rem;
   margin: 0 auto;
-  margin-bottom: 62px;
+  margin-bottom: 3.875rem;
 }
 
 .promo__advantages-list {
-  margin: 0 -24px;
+  margin: 0 -1.5rem;
   padding: 0;
   list-style: none;
   display: -webkit-box;
@@ -863,9 +936,9 @@ html, body {
 }
 
 .promo__advantages-item {
-  -ms-flex-preferred-size: 1 1 276px;
-      flex-basis: 1 1 276px;
-  padding-top: 152px;
+  -ms-flex-preferred-size: 1 1 17.25rem;
+      flex-basis: 1 1 17.25rem;
+  padding-top: 9.5rem;
   text-align: center;
   position: relative;
   display: -webkit-box;
@@ -878,14 +951,14 @@ html, body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 24px;
-  margin-bottom: 70px;
+  margin: 0 1.5rem;
+  margin-bottom: 4.375rem;
 }
 
 .promo__advantages-item::before {
   content: '';
-  width: 128px;
-  height: 128px;
+  width: 8rem;
+  height: 8rem;
   border-radius: 50%;
   position: absolute;
   top: 0;
@@ -893,25 +966,25 @@ html, body {
 
 .promo__advantages-item:nth-child(1)::before {
   background: url("../img/icons/feat-1.svg") no-repeat center;
-  background-size: 68px;
+  background-size: 4.25rem;
   background-color: #F2F5F4;
 }
 
 .promo__advantages-item:nth-child(2)::before {
   background: url("../img/icons/feat-2.svg") no-repeat center;
-  background-size: 68px;
+  background-size: 4.25rem;
   background-color: #F2F5F4;
 }
 
 .promo__advantages-item:nth-child(3)::before {
   background: url("../img/icons/feat-3.svg") no-repeat center;
-  background-size: 68px;
+  background-size: 4.25rem;
   background-color: #F2F5F4;
 }
 
 .promo__advantages-title {
   margin: 0;
-  margin-bottom: 7px;
+  margin-bottom: 0.4375rem;
   padding: 0;
   font-size: 1.5rem;
   font-weight: 700;
@@ -921,13 +994,13 @@ html, body {
 .promo__advantages-text {
   margin: 0;
   padding: 0;
-  width: 247px;
+  width: 15.4375rem;
 }
 
 .products {
   background-color: #F8FAF9;
-  padding-top: 36px;
-  padding-bottom: 96px;
+  padding-top: 2.25rem;
+  padding-bottom: 6rem;
 }
 
 .products__container {
@@ -952,14 +1025,14 @@ html, body {
 }
 
 .products__left-column {
-  padding-top: 58px;
-  padding-left: 20px;
-  margin-right: 20px;
+  padding-top: 3.625rem;
+  padding-left: 1.25rem;
+  margin-right: 1.25rem;
   margin-left: 0;
 }
 
 .products__right-column {
-  /*padding-top: 68px;*/
+  /*padding-top: rem(68px);*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -967,38 +1040,38 @@ html, body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-preferred-size: 400px;
-      flex-basis: 400px;
+  -ms-flex-preferred-size: 25rem;
+      flex-basis: 25rem;
   margin-right: 0;
-  margin-left: 20px;
+  margin-left: 1.25rem;
 }
 
 .products__button-specifications {
-  width: 91px;
-  height: 91px;
-  margin-bottom: 25px;
-  border-radius: 4px;
+  width: 5.6875rem;
+  height: 5.6875rem;
+  margin-bottom: 1.5625rem;
+  border-radius: 0.25rem;
   background: url("../img/specifications.svg") no-repeat center;
-  background-size: 42px 42px;
+  background-size: 2.625rem 2.625rem;
   background-color: #9A9A9A;
 }
 
 .products__title {
-  margin-bottom: 25px;
+  margin-bottom: 1.5625rem;
 }
 
 .products__subtitle {
-  width: 368px;
-  margin-bottom: 26px;
+  width: 23rem;
+  margin-bottom: 1.625rem;
 }
 
 .products__features {
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 
 .products__img {
   width: 100%;
-  max-width: 452px;
+  max-width: 28.25rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1017,22 +1090,22 @@ html, body {
   line-height: 3.75rem;
   margin: 0;
   padding: 0;
-  margin-right: 19px;
+  margin-right: 1.1875rem;
 }
 
 .price__button {
-  width: 163px;
-  height: 60px;
-  left: 161px;
-  border-radius: 100px;
+  width: 10.1875rem;
+  height: 3.75rem;
+  left: 10.0625rem;
+  border-radius: 6.25rem;
 }
 
 .button-slider {
   border: none;
-  width: 24px;
-  height: 40px;
+  width: 1.5rem;
+  height: 2.5rem;
   background: url("../img/arrow-left.svg") no-repeat center;
-  background-size: 24px 40px;
+  background-size: 1.5rem 2.5rem;
   cursor: pointer;
   outline: none;
   position: absolute;
@@ -1041,7 +1114,7 @@ html, body {
 .button-slider_prev {
   top: 50%;
   left: 0%;
-  margin-left: 20px;
+  margin-left: 1.25rem;
 }
 
 .button-slider_next {
@@ -1049,22 +1122,22 @@ html, body {
           transform: rotate(180deg);
   top: 50%;
   right: 0%;
-  margin-right: 20px;
+  margin-right: 1.25rem;
 }
 
 .team {
-  padding-top: 70px;
-  padding-bottom: 20px;
+  padding-top: 4.375rem;
+  padding-bottom: 1.25rem;
 }
 
 .team__title {
   text-align: center;
-  margin-bottom: 53px;
+  margin-bottom: 3.3125rem;
 }
 
 .team__name {
-  margin-bottom: 12px;
-  padding-right: 5px;
+  margin-bottom: 0.75rem;
+  padding-right: 0.3125rem;
   text-align: center;
   position: relative;
 }
@@ -1072,17 +1145,17 @@ html, body {
 .team__name:after {
   content: '';
   position: relative;
-  top: 15px;
-  left: 5px;
+  top: 0.9375rem;
+  left: 0.3125rem;
   width: 0;
   height: 0;
-  border-top: 8px solid #E01F3D;
-  border-right: 4px solid transparent;
-  border-left: 4px solid transparent;
+  border-top: 0.5rem solid #E01F3D;
+  border-right: 0.25rem solid transparent;
+  border-left: 0.25rem solid transparent;
 }
 
 .team__list {
-  margin: 0 -10px;
+  margin: 0 -0.625rem;
   padding: 0;
   list-style: none;
   display: -webkit-box;
@@ -1095,16 +1168,16 @@ html, body {
 }
 
 .team__item {
-  width: 220px;
+  width: 13.75rem;
   cursor: pointer;
-  margin: 0 10px;
-  padding-bottom: 30px;
+  margin: 0 0.625rem;
+  padding-bottom: 1.875rem;
 }
 
 .team__img {
-  width: 220px;
-  height: 290px;
-  margin-bottom: 21px;
+  width: 13.75rem;
+  height: 18.125rem;
+  margin-bottom: 1.3125rem;
 }
 
 .specialization {
@@ -1115,7 +1188,7 @@ html, body {
 
 .specialization__termin {
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 0.3125rem;
   padding: 0;
   text-align: center;
   color: #000000;
@@ -1135,14 +1208,14 @@ html, body {
 .colors {
   background: url("../img/wooman-ball.jpg") no-repeat center;
   background-size: cover;
-  min-height: 652px;
+  min-height: 40.75rem;
   position: relative;
 }
 
 .colors__container {
-  width: 940px;
+  width: 58.75rem;
   margin: 0 auto;
-  padding: 115px 15px 0 15px;
+  padding: 7.1875rem 0.9375rem 0 0.9375rem;
 }
 
 .colors__title {
@@ -1169,7 +1242,7 @@ html, body {
 }
 
 .colors__item {
-  width: 102px;
+  width: 6.375rem;
   position: relative;
 }
 
@@ -1191,11 +1264,11 @@ html, body {
   font-weight: bold;
   font-size: 2.25rem;
   line-height: 2.6875rem;
-  width: 466px;
-  padding-left: 20px;
+  width: 29.125rem;
+  padding-left: 1.25rem;
   position: absolute;
   top: 100%;
-  left: 30px;
+  left: 1.875rem;
   -webkit-transform-origin: 0 0;
           transform-origin: 0 0;
   -webkit-transform: rotate(-90deg);
@@ -1203,17 +1276,17 @@ html, body {
 }
 
 .reviews__container {
-  padding-top: 64px;
-  padding-bottom: 60px;
+  padding-top: 4rem;
+  padding-bottom: 3.75rem;
 }
 
 .reviews__title {
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 2rem;
 }
 
 .reviews__blockquote {
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 .reviews__nav {
@@ -1233,7 +1306,7 @@ html, body {
 }
 
 .reviews__item {
-  margin-right: 6px;
+  margin-right: 0.375rem;
 }
 
 .reviews__item:last-child {
@@ -1246,15 +1319,15 @@ html, body {
   padding: 0;
   border: none;
   outline: none;
-  width: 74px;
-  height: 74px;
+  width: 4.625rem;
+  height: 4.625rem;
   border-radius: 50%;
   display: block;
   overflow: hidden;
 }
 
 .reviews__button_active {
-  border: 4px solid #E01F3D;
+  border: 0.25rem solid #E01F3D;
 }
 
 .reviews__img_min {
@@ -1269,14 +1342,14 @@ html, body {
 }
 
 .video__container {
-  padding-top: 58px;
-  padding-bottom: 106px;
+  padding-top: 3.625rem;
+  padding-bottom: 6.625rem;
 }
 
 .video__title {
   text-align: center;
   margin: 0;
-  margin-bottom: 44px;
+  margin-bottom: 2.75rem;
   padding: 0;
 }
 
@@ -1284,7 +1357,7 @@ html, body {
   margin: 0 auto;
   display: block;
   width: 100%;
-  max-width: 662px;
+  max-width: 41.375rem;
 }
 
 .order {
@@ -1292,23 +1365,23 @@ html, body {
 }
 
 .order__container {
-  padding-top: 68px;
-  padding-bottom: 85px;
+  padding-top: 4.25rem;
+  padding-bottom: 5.3125rem;
 }
 
 .order__title {
   color: white;
   text-align: center;
-  margin-bottom: 58px;
+  margin-bottom: 3.625rem;
 }
 
 .map {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: url("../img/map.jpg") no-repeat center;
   background-size: cover;
-  min-height: 652px;
+  min-height: 40.75rem;
 }
 
 .goodbye {
@@ -1327,11 +1400,11 @@ html, body {
 }
 
 .contacts__phone {
-  margin-left: 20px;
+  margin-left: 1.25rem;
 }
 
 .footer {
-  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }

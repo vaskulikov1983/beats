@@ -1,11 +1,12 @@
-html, body {font-family: 'Play', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #292929;
-    overflow-x: hidden;
-}
+$containerWidth: 1100px;
+$baseFontSize: 16px;
 
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
+
+@import "media";
+@import "layout";
 @import "blocks/fonts";
 @import "sections/page";
 @import "blocks/link";

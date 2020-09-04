@@ -1,12 +1,12 @@
 .social {
     display: flex;
     align-items: center;
-    margin-right: -20px;
+    margin-right: rem(-20px);
     &__icon {
-        width: 30px;
-        height: 30px;
+        width: rem(30px);
+        height: rem(30px);
         fill: #B3B3B3;
-        margin-right: 10px;
+        margin-right: rem(10px);
         &:last-child {
             margin-right: 0;
         }
