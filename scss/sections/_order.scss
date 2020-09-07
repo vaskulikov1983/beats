@@ -3,12 +3,20 @@
     &__container {
         padding-top: rem(68px);
         padding-bottom: rem(85px);
+        @include tablets {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
     }
 
     &__title {
         color: white;
         text-align: center;
         margin-bottom: rem(58px);
+        @include tablets {
+            margin-bottom: rem(30px);
+        }
     }
 }
 

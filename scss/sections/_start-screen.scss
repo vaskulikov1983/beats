@@ -1,16 +1,58 @@
 .start-screen {
     background-color: #f5f5f5;
+
     
     &__container {
         padding-top: rem(66px);
         padding-bottom: rem(50px);
-        background: url('../img/headphones-main.png') no-repeat;
-        background-position: 84% rem(20px);
-        background-size: rem(489px);
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
         @include tablets {
-            height: 90vh;
+            min-height: 90vh;
+            padding-bottom: 0;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
         }
     }
+
+    &__content {
+        box-sizing: border-box;
+        position: relative;
+        z-index: 10;
+        @include tablets {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+    }
+
+    &__picture {
+        box-sizing: border-box;
+        position: absolute;
+        top: 3%;
+        right: 9%;
+        @include tablets {
+            width: 46%;
+
+            position: static;
+            margin-bottom: 10%;
+            flex-shrink: 1;
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: content;
+            }
+        }
+
+    }
+
 
     &__title {
         width: rem(400px);
@@ -19,8 +61,7 @@
         margin-bottom: rem(22px);
         display: block;
         @include tablets {
-            width: 87%;
-            margin: 0 auto;
+            width: 90%;
             text-align: center;
         }
     }
@@ -33,8 +74,6 @@
         margin-bottom: rem(36px);
         padding: 0;
         @include tablets {
-            width: 48%;
-            margin: 0 auto;
             text-align: center;
         }
     }
@@ -42,7 +81,7 @@
     &__button {
         margin-bottom: rem(72px);
         @include tablets {
-            margin: 0 auto;
+
         }
     }
 
@@ -55,6 +94,9 @@
         flex-wrap: nowrap;
         justify-content: space-between;
         align-items: center;
+        @include tablets {
+            display: none;
+        }
     }
 
     &__advantages-item {

@@ -14,4 +14,7 @@
             fill: #000000;
         }
     }
+    @include tablets {
+        margin: 0;
+    }
 }

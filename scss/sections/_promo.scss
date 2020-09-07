@@ -1,8 +1,13 @@
 .promo {
-    
     &__container {
         padding-top: rem(100px);
         padding-bottom: rem(26px);
+        @include tablets {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
     }
 
     &__title {
@@ -38,12 +43,14 @@
         align-items: center;
         margin: 0 rem(24px);
         margin-bottom: rem(70px);
-
-
+        @include tablets {
+            margin: 0;
+            margin-bottom: 40px;
+        }
     }
 
     &__advantages-item::before {
-        content: '';
+        content: "";
         width: rem(128px);
         height: rem(128px);
         border-radius: 50%;
@@ -52,21 +59,21 @@
     }
 
     &__advantages-item:nth-child(1)::before {
-        background: url('../img/icons/feat-1.svg') no-repeat center;
+        background: url("../img/icons/feat-1.svg") no-repeat center;
         background-size: rem(68px);
-        background-color: #F2F5F4;
+        background-color: #f2f5f4;
     }
 
     &__advantages-item:nth-child(2)::before {
-        background: url('../img/icons/feat-2.svg') no-repeat center;
+        background: url("../img/icons/feat-2.svg") no-repeat center;
         background-size: rem(68px);
-        background-color: #F2F5F4;
+        background-color: #f2f5f4;
     }
 
     &__advantages-item:nth-child(3)::before {
-        background: url('../img/icons/feat-3.svg') no-repeat center;
+        background: url("../img/icons/feat-3.svg") no-repeat center;
         background-size: rem(68px);
-        background-color: #F2F5F4;
+        background-color: #f2f5f4;
     }
 
     &__advantages-title {
@@ -75,15 +82,19 @@
         padding: 0;
         font-size: 1.5rem;
         font-weight: 700;
-        line-height: 1.75rem;   
+        line-height: 1.75rem;
     }
 
     &__advantages-text {
         margin: 0;
         padding: 0;
         width: rem(247px);
+        @include tablets {
+            width: 100%;
+            max-width: 229px;
+        }
     }
-/*
+    /*
     &__advantages-decor {
         width: rem(22px);
         height: rem(22px);

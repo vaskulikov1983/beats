@@ -102,6 +102,9 @@
         border: none;
         outline: none;
         box-sizing: border-box;
+        @include tablets {
+            height: rem(36px);
+        }
     }
 
     &__radio {
@@ -202,6 +205,9 @@
         flex-direction: column;
         max-width: 100%;
         margin-bottom: rem(38px);
+        @include tablets {
+            margin-bottom: rem(30px);
+        }
     }
     &__textarea {
         display: block;
@@ -213,6 +219,9 @@
         padding: rem(5px) rem(10px);
         max-width: 100%;
         resize: none;
+        @include tablets {
+            min-height: rem(82px);
+        }
     }
 
     &__payment {
@@ -241,5 +250,8 @@
     }
     &__buttons {
         display: flex;
+        @include tablets {
+            align-self: center;
+        }
     }
 }

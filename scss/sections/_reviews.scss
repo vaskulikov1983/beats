@@ -2,6 +2,12 @@
     &__container {
         padding-top: rem(64px);    
         padding-bottom: rem(60px);
+        @include tablets {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
     }
     &__title {
         text-align: center;
@@ -10,6 +16,7 @@
 
     &__blockquote {
         margin-bottom: rem(16px);
+
     }
 
     &__nav {

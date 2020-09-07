@@ -3,6 +3,11 @@
     &__container {
         padding-top: rem(58px);
         padding-bottom: rem(106px);
+        @include tablets {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
     }
     &__title {
         text-align: center;

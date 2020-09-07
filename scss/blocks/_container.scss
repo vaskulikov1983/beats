@@ -5,7 +5,9 @@
     margin: 0 auto;
     box-sizing: border-box;
     @include tablets {
-        height: 100vh;
+        min-height: 100vh;
         padding: 0 rem(22px);
+        width: 100%;
+        max-width: 100vw;
     }
 }

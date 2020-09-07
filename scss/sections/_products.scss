@@ -1,5 +1,5 @@
 .products {
-    background-color: #F8FAF9;
+    background-color: #f8faf9;
     padding-top: rem(36px);
     padding-bottom: rem(96px);
     &__container {
@@ -10,6 +10,10 @@
         align-items: center;
         box-sizing: border-box;
         position: relative;
+        @include tablets {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__left-column {
@@ -26,6 +30,9 @@
         flex-basis: rem(400px);
         margin-right: 0;
         margin-left: rem(20px);
+        @include tablets {
+            align-items: center;
+        }
     }
 
     &__button-specifications {
@@ -33,18 +40,30 @@
         height: rem(91px);
         margin-bottom: rem(25px);
         border-radius: rem(4px);
-        background: url('../img/specifications.svg') no-repeat center;
+        background: url("../img/specifications.svg") no-repeat center;
         background-size: rem(42px) rem(42px);
-        background-color: #9A9A9A;
+        background-color: #9a9a9a;
+        @include tablets {
+            display: none;
+        }
     }
 
     &__title {
         margin-bottom: rem(25px);
+        @include tablets {
+            text-align: center;
+            font-size: 28px;
+            line-height: 32px;
+        }
     }
 
     &__subtitle {
         width: rem(368px);
         margin-bottom: rem(26px);
+        @include tablets {
+            text-align: center;
+            width: 100%;
+        }
     }
 
     &__features {
