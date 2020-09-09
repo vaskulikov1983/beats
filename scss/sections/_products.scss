@@ -2,6 +2,9 @@
     background-color: #f8faf9;
     padding-top: rem(36px);
     padding-bottom: rem(96px);
+    @include tablets {
+        padding-bottom: rem(30px);
+    }
     &__container {
         display: flex;
         flex-direction: row;
@@ -12,6 +15,7 @@
         position: relative;
         @include tablets {
             flex-direction: column;
+            justify-content: center;
             align-items: center;
         }
     }
@@ -21,6 +25,16 @@
         padding-left: rem(20px);
         margin-right: rem(20px);
         margin-left: 0;
+        @include tablets {
+            width: 40%;
+            margin-bottom: rem(50px);
+            margin-right: 0;
+            padding: 0;
+        }
+
+        @include phones {
+            width: 70%;
+        }
     }
 
     &__right-column {
@@ -31,7 +45,12 @@
         margin-right: 0;
         margin-left: rem(20px);
         @include tablets {
+            margin-left: 0;
             align-items: center;
+            max-width: 88%;
+        }
+        @include phones {
+            max-width: 92%;
         }
     }
 
@@ -68,6 +87,8 @@
 
     &__features {
         margin-bottom: rem(24px);
+
+        
     }
 
     &__img {

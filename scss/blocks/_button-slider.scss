@@ -12,6 +12,14 @@
         top: 50%;
         left: 0%;
         margin-left: rem(20px);
+        @include tablets {
+            margin-left: rem(10px);
+        }
+
+        @include phones {
+            margin-left: 0;
+        }
+
     }
     
     &_next {
@@ -19,5 +27,11 @@
         top: 50%;
         right: 0%;
         margin-right: rem(20px);
+        @include tablets {
+            margin-right: rem(10px);
+        }
+        @include phones {
+            margin-right: 0;
+        }
     }
 }

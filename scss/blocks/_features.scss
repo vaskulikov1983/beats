@@ -7,12 +7,22 @@
     @include zero;
     display: flex;
     align-items: flex-start;
+    @include tablets {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
     
 
     &__item {
         @include zero;
         margin-right: rem(44px);
         flex-basis: rem(104px);
+        @include tablets {
+            margin: 0 rem(36px);
+            flex-basis: auto;
+
+        }
     }
 
     &__termin {

@@ -30,12 +30,14 @@
         flex-wrap: wrap;
         justify-content: space-around;
         align-items: flex-start;
+        @include phones {
+            flex-direction: column;
+            margin-left: 0;
+        }
     }
 
     &__advantages-item {
         flex-basis: 1 1 rem(276px);
-        //  width: rem(276px);
-        padding-top: rem(152px);
         text-align: center;
         position: relative;
         display: flex;
@@ -47,33 +49,42 @@
             margin: 0;
             margin-bottom: 40px;
         }
+
+        @include phones {
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
     }
 
-    &__advantages-item::before {
-        content: "";
+    &__advantages-picture {
         width: rem(128px);
         height: rem(128px);
         border-radius: 50%;
-        position: absolute;
-        top: 0;
+        background-color: #f2f5f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: rem(26px);
+        & img {
+            max-width: rem(68px);
+            max-height: rem(68px);
+        }
+
+        @include phones {
+            margin-bottom: rem(10px);
+            margin-right: rem(12px);
+        }
     }
 
-    &__advantages-item:nth-child(1)::before {
-        background: url("../img/icons/feat-1.svg") no-repeat center;
-        background-size: rem(68px);
-        background-color: #f2f5f4;
-    }
+    &__advantages-descript {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include phones {
+            justify-content: center;
+        }
 
-    &__advantages-item:nth-child(2)::before {
-        background: url("../img/icons/feat-2.svg") no-repeat center;
-        background-size: rem(68px);
-        background-color: #f2f5f4;
-    }
-
-    &__advantages-item:nth-child(3)::before {
-        background: url("../img/icons/feat-3.svg") no-repeat center;
-        background-size: rem(68px);
-        background-color: #f2f5f4;
     }
 
     &__advantages-title {
@@ -83,6 +94,9 @@
         font-size: 1.5rem;
         font-weight: 700;
         line-height: 1.75rem;
+        @include phones {
+            align-self: flex-start;
+        }
     }
 
     &__advantages-text {
@@ -91,7 +105,11 @@
         width: rem(247px);
         @include tablets {
             width: 100%;
-            max-width: 229px;
+            max-width: rem(229px);
+        }
+        @include phones {
+            text-align: left;
+            max-width: rem(302px);
         }
     }
     /*

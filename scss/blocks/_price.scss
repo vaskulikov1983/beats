@@ -1,17 +1,32 @@
 .price {
     display: flex;
     align-items: center;
+
     &__value {
         font-size: 2.25rem;
         line-height: 3.75rem;
         margin: 0;
         padding: 0;
         margin-right: rem(19px);
+        @include tablets {
+            margin: 0 rem(26px);
+            white-space: nowrap;
+        }
+        @include phones {
+            margin: 0 rem(14px);
+            font-size: 2rem;
+        }
     }
     &__button {
         width: rem(163px);
         height: rem(60px);
         left: rem(161px);
         border-radius: rem(100px);
+        @include tablets {
+            margin: 0 rem(26px);
+        }
+        @include phones {
+            margin: 0 rem(14px);
+        }
     }
 }

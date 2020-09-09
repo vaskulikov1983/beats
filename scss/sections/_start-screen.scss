@@ -16,7 +16,10 @@
             justify-content: center;
             align-items: center;
             width: 100%;
+        }
 
+        @include phones {
+            padding: 0 rem(20px);
         }
     }
 
@@ -49,6 +52,9 @@
                 height: 100%;
                 object-fit: content;
             }
+        }
+        @include phones {
+            width: 78%;
         }
 
     }
