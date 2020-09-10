@@ -7,4 +7,9 @@
     margin: 0;
     padding: 0;
     margin-bottom: rem(5px);
+    @include phones {
+        font-size: rem(18px);
+        line-height: rem(24px);
+        margin-bottom: rem(12px);
+    }
 }

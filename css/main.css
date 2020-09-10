@@ -159,6 +159,8 @@ html {
   width: 26px;
   height: 20px;
   display: none;
+  position: fixed;
+  right: 5%;
 }
 
 @media screen and (max-width: 768px) {
@@ -183,25 +185,39 @@ html {
   border-radius: 2px;
 }
 
-.social {
+.social__list {
+  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: -1.25rem;
+  margin: 0;
+  padding: 0;
+}
+
+.social__item {
+  margin: 0 0.3125rem;
+}
+
+@media screen and (max-width: 480px) {
+  .social__item {
+    margin: 0;
+    margin-right: 0.875rem;
+  }
+  .social__item:last-child {
+    margin-right: 0;
+  }
 }
 
 .social__icon {
   width: 1.875rem;
   height: 1.875rem;
-  fill: #B3B3B3;
-  margin-right: 0.625rem;
-}
-
-.social__icon:last-child {
-  margin-right: 0;
+  fill: #b3b3b3;
 }
 
 .social__icon:hover {
@@ -223,6 +239,14 @@ html {
   margin: 0;
   padding: 0;
   margin-bottom: 0.3125rem;
+}
+
+@media screen and (max-width: 480px) {
+  .address {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
 }
 
 .blockquote {
@@ -1218,6 +1242,9 @@ html {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .promo__advantages-item:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .promo__advantages-picture {
@@ -1244,7 +1271,7 @@ html {
 
 @media screen and (max-width: 480px) {
   .promo__advantages-picture {
-    margin-bottom: 0.625rem;
+    margin-bottom: 0;
     margin-right: 0.75rem;
   }
 }
@@ -1966,17 +1993,55 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+  .goodbye {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 1.25rem;
+    padding-bottom: 1.875rem;
+  }
 }
 
 .contacts {
   margin: 0;
   padding: 0;
   font-style: normal;
+  margin-right: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .contacts__phone {
   margin-left: 1.25rem;
   display: block;
+}
+
+@media screen and (max-width: 480px) {
+  .contacts__phone {
+    margin-left: 2.25rem;
+    margin-bottom: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contacts {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 0;
+  }
 }
 
 .footer {

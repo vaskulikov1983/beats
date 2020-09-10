@@ -2,10 +2,13 @@
     width: 26px;
     height: 20px;
     display: none;
+    position: fixed;
+    right: 5%;
     @include tablets {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        
     }
 
     &__line {

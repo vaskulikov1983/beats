@@ -1,18 +1,33 @@
 .social {
-    display: flex;
-    align-items: center;
-    margin-right: rem(-20px);
+
+    &__list {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item {
+        margin: 0 rem(5px);
+        @include phones {
+            margin: 0;
+            margin-right: rem(14px);
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
     &__icon {
         width: rem(30px);
         height: rem(30px);
-        fill: #B3B3B3;
-        margin-right: rem(10px);
-        &:last-child {
-            margin-right: 0;
-        }
+        fill: #b3b3b3;
+
         &:hover {
             fill: #000000;
         }
+        
     }
     @include tablets {
         margin: 0;

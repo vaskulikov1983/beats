@@ -54,6 +54,9 @@
             flex-direction: row;
             flex-wrap: nowrap;
             justify-content: space-between;
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
     }
 
@@ -72,7 +75,7 @@
         }
 
         @include phones {
-            margin-bottom: rem(10px);
+            margin-bottom: 0;
             margin-right: rem(12px);
         }
     }
