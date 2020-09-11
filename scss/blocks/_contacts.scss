@@ -5,19 +5,24 @@
     margin-right: 2rem;
     display: flex;
     flex-direction: column;
+    @include tablets {
+        align-items: center;
+        margin-right: 0;
+        margin-bottom: rem(20px);
+    }
 
 
     &__phone {
         margin-left: rem(20px);
         display: block;
-        @include phones {
-            margin-left: rem(36px);
-            margin-bottom: rem(20px);
+        @include tablets {
+            margin-left: rem(30px);
         }
     }
 
     @include phones {
         align-items: center;
         margin-right: 0;
+
     }
 }

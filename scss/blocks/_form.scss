@@ -4,6 +4,10 @@
     justify-content: space-around;
     box-sizing: border-box;
     margin: 0 rem(-14px);
+    @include phones {
+        margin: 0;
+        max-width: 100%;
+    }
 
 
     &__left-column {
@@ -13,6 +17,13 @@
         box-sizing: border-box;
         max-width: rem(460px);
         margin: 0 rem(14px);
+        @include tablets {
+            margin: 0;
+        }
+
+        @include phones {
+            max-width: 100%;
+        }
     }
 
     &__right-column {
@@ -22,7 +33,10 @@
         box-sizing: border-box;
         max-width: rem(460px);
         margin: 0 rem(14px);
-
+        @include phones {
+            max-width: 100%;
+            margin: 0;
+        }
     }
 
     &__label {
@@ -117,6 +131,10 @@
         flex-direction: row;
         justify-content: flex-start;
         margin-bottom: rem(11px);
+        @include tablets {
+
+            max-width: 100%;
+        }
     }
 
     &__name {
@@ -127,6 +145,10 @@
         padding: 0;
         margin-right: rem(16px);
         box-sizing: border-box;
+        @include tablets {
+            flex: 1 1;
+            min-width: 30%;
+        }
     }
 
     &__phone {
@@ -136,6 +158,10 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        @include tablets {
+            flex: 1 1;
+            min-width: 30%;
+        }
     }
 
     &__street {
@@ -253,6 +279,10 @@
         display: flex;
         @include tablets {
             align-self: center;
+        }
+
+        @include phones {
+            max-width: 100%;
         }
     }
 }

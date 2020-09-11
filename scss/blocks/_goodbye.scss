@@ -2,9 +2,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @include phones {
+
+    @include tablets {
         flex-direction: column;
+        justify-content: center;
         padding-top: rem(20px);
         padding-bottom: rem(30px);
+        min-height: 100vh;
     }
 }
