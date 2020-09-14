@@ -1,11 +1,11 @@
 .map {
-    margin-bottom: rem(20px);
+    //margin-bottom: rem(20px);
     box-sizing: border-box;
     background: url('../img/map.jpg') no-repeat center;
     background-size: cover;
     min-height: rem(652px);
 
-    @include tablets {
+    @include phones {
         min-height: 100vh;
     }
 }

@@ -33,6 +33,7 @@
         @include phones {
             flex-direction: column;
             margin-left: 0;
+            width: 100%;
         }
     }
 
@@ -53,7 +54,8 @@
         @include phones {
             flex-direction: row;
             flex-wrap: nowrap;
-            justify-content: space-between;
+            justify-content: flex-start;
+            width: 100%;
             &:last-child {
                 margin-bottom: 0;
             }
@@ -77,6 +79,7 @@
         @include phones {
             margin-bottom: 0;
             margin-right: rem(12px);
+            min-width: rem(128px);
         }
     }
 
@@ -86,6 +89,8 @@
         align-items: center;
         @include phones {
             justify-content: center;
+            align-items: flex-start;
+            width: 100%;
         }
 
     }
@@ -99,6 +104,8 @@
         line-height: 1.75rem;
         @include phones {
             align-self: flex-start;
+            text-align: left;
+            width: 100%;
         }
     }
 
@@ -112,7 +119,8 @@
         }
         @include phones {
             text-align: left;
-            max-width: rem(302px);
+            max-width: 100%;
+
         }
     }
     /*

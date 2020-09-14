@@ -241,7 +241,7 @@ html {
   margin-bottom: 0.3125rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .address {
     font-size: 1.125rem;
     line-height: 1.5rem;
@@ -439,6 +439,7 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-bottom: 0.375rem;
+  cursor: pointer;
 }
 
 .form__label_margin_zero {
@@ -1259,6 +1260,7 @@ html {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-left: 0;
+    width: 100%;
   }
 }
 
@@ -1296,9 +1298,10 @@ html {
             flex-direction: row;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 100%;
   }
   .promo__advantages-item:last-child {
     margin-bottom: 0;
@@ -1331,6 +1334,7 @@ html {
   .promo__advantages-picture {
     margin-bottom: 0;
     margin-right: 0.75rem;
+    min-width: 8rem;
   }
 }
 
@@ -1352,6 +1356,10 @@ html {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 100%;
   }
 }
 
@@ -1368,6 +1376,8 @@ html {
   .promo__advantages-title {
     -ms-flex-item-align: start;
         align-self: flex-start;
+    text-align: left;
+    width: 100%;
   }
 }
 
@@ -1387,7 +1397,7 @@ html {
 @media screen and (max-width: 480px) {
   .promo__advantages-text {
     text-align: left;
-    max-width: 18.875rem;
+    max-width: 100%;
   }
 }
 
@@ -2036,7 +2046,6 @@ html {
 }
 
 .map {
-  margin-bottom: 1.25rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: url("../img/map.jpg") no-repeat center;
@@ -2044,7 +2053,7 @@ html {
   min-height: 40.75rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .map {
     min-height: 100vh;
   }
@@ -2062,7 +2071,7 @@ html {
           align-items: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .goodbye {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2091,7 +2100,7 @@ html {
           flex-direction: column;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .contacts {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -2106,7 +2115,7 @@ html {
   display: block;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .contacts__phone {
     margin-left: 1.875rem;
   }
@@ -2122,9 +2131,13 @@ html {
 }
 
 .footer {
-  padding-bottom: 1.25rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.footer__container {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 @media screen and (max-width: 768px) {
