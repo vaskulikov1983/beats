@@ -5,7 +5,7 @@
     background-size: cover;
     min-height: rem(652px);
 
-    @include phones {
+    @include tablets {
         min-height: 100vh;
     }
 }
