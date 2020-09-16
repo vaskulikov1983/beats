@@ -20,6 +20,11 @@ html {
 
 .wrapper {
   overflow-x: hidden;
+  position: relative;
+}
+
+.wrapper_fixed {
+  overflow: hidden;
 }
 
 @font-face {
@@ -44,6 +49,10 @@ html {
   font-weight: 400;
   font-display: swap;
   src: local("Alegreya Sans"), url("../fonts/AlegreyaSans-Regular.woff2") format("woff2"), url("../fonts/AlegreyaSans-Regular.woff") format("woff"), url("../fonts/AlegreyaSans-Regular.ttf") format("truetype"), url("../fonts/AlegreyaSans-Regular.eot") format("embedded-opentype");
+}
+
+.page_fixed {
+  overflow: hidden;
 }
 
 .link {
@@ -160,6 +169,7 @@ html {
   height: 20px;
   display: none;
   position: fixed;
+  top: 2rem;
   right: 5%;
 }
 
@@ -178,11 +188,96 @@ html {
   }
 }
 
+.hamburger_active {
+  z-index: 200;
+}
+
 .hamburger__line {
   width: 100%;
   height: 4px;
   background-color: black;
   border-radius: 2px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.hamburger__line_active {
+  background-color: white;
+  position: absolute;
+  z-index: 200;
+}
+
+.hamburger__line_active:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.hamburger__line_active:nth-child(2) {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.hamburger__line_active:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #313131;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  right: -200%;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.overlay__list {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.overlay__link {
+  text-decoration: none;
+  color: white;
+  font-family: 'Play', sans-serif;
+  font-size: 2.25rem;
+  line-height: 4.5rem;
+}
+
+.overlay__link:hover {
+  color: #E01F3D;
+}
+
+.overlay_active {
+  right: 0;
 }
 
 .social__list {
