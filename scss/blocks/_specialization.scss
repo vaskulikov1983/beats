@@ -1,7 +1,14 @@
 .specialization {
     margin: 0;
     padding: 0;
-    visibility: hidden;
+    max-height: 100%;
+    display: none;
+
+    &_active {
+        overflow: visible;
+        height: 100%;
+    }
+
 
     &__termin {
         margin: 0;
@@ -19,6 +26,3 @@
     }
 }
 
-.team__item:hover .specialization {
-    visibility: visible;
-}
