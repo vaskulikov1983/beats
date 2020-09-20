@@ -1,13 +1,9 @@
 .promo {
     &__container {
-        padding-top: rem(100px);
-        padding-bottom: rem(26px);
-        @include tablets {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
     }
 
     &__title {
@@ -92,7 +88,6 @@
             align-items: flex-start;
             width: 100%;
         }
-
     }
 
     &__advantages-title {
@@ -120,7 +115,6 @@
         @include phones {
             text-align: left;
             max-width: 100%;
-
         }
     }
     /*

@@ -1,12 +1,10 @@
 .products {
     background-color: #f8faf9;
-    padding-top: rem(36px);
-    padding-bottom: rem(96px);
     @include tablets {
-        padding-bottom: rem(30px);
+        padding: 0;
     }
     &__container {
-        display: flex;
+       /* display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-between;
@@ -17,13 +15,18 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-        }
+        }*/
+        max-width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        height: 100vh;
     }
 
     &__left-column {
         padding-top: rem(58px);
         padding-left: rem(20px);
-        margin-right: rem(20px);
+        margin-right: rem(26px);
         margin-left: 0;
         @include tablets {
             width: 40%;
@@ -41,9 +44,9 @@
         /*padding-top: rem(68px);*/
         display: flex;
         flex-direction: column;
-        flex-basis: rem(400px);
+        flex-basis: rem(416px);
         margin-right: 0;
-        margin-left: rem(20px);
+        margin-left: rem(26px);
         @include tablets {
             margin-left: 0;
             align-items: center;

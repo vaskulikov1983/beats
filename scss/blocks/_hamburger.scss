@@ -5,6 +5,7 @@
     position: fixed;
     top: rem(32px);
     right: 5%;
+    z-index: 10000;
     @include tablets {
         display: flex;
         flex-direction: column;

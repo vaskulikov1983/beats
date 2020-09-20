@@ -1,11 +1,14 @@
 .footer {
     box-sizing: border-box;
+
     &__container {
-        padding-top: rem(20px);
-        padding-bottom: rem(20px);
+        min-height: 10%;
+padding-top: rem(20px);
+        padding-bottom: rem(20px);/*
         @include tablets {
             min-height: rem(66px);
-        }
+        }*/
+        
     }
     
 }

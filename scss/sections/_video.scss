@@ -1,13 +1,11 @@
 .video {
     background-color: #F8FAF9;
     &__container {
-        padding-top: rem(58px);
-        padding-bottom: rem(106px);
-        @include tablets {
             display: flex;
             flex-direction: column;
             justify-content: center;
-        }
+            height: 100vh;
+ 
     }
     &__title {
         text-align: center;

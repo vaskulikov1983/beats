@@ -1,12 +1,10 @@
 .team {
-    padding-top: rem(70px);
-    padding-bottom: rem(20px);
     &__containter {
-        @include tablets {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
     }
 
     &__title {

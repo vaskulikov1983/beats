@@ -1,13 +1,9 @@
 .reviews {
     &__container {
-        padding-top: rem(64px);    
-        padding-bottom: rem(60px);
-        @include tablets {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-
-        }
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     &__title {
         text-align: center;
@@ -16,7 +12,6 @@
 
     &__blockquote {
         margin-bottom: rem(16px);
-
     }
 
     &__nav {
@@ -50,9 +45,8 @@
         display: block;
         overflow: hidden;
         &_active {
-            border: rem(4px) solid #E01F3D;
+            border: rem(4px) solid #e01f3d;
         }
-        
     }
 
     &__img {

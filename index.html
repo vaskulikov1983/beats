@@ -7,7 +7,7 @@
     <title>Беспроводные наушники Beats Solo 3</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-    <base href="https://vaskulikov1983.github.io/">
+    <!--<base href="https://vaskulikov1983.github.io/">-->
 </head>
 
 <body class="page">
@@ -153,36 +153,72 @@
             <section class="products">
                 <div class="container products__container">
                     <h2 class="title visually-hidden">Каталог</h2>
-                    <div class="products__left-column">
-                        <img class="products__img" src="img/headphones-add.png"
-                            alt="Наушники Beats Solo 3. Цвет «Атласное серебро»">
-                    </div>
-                    <div class="products__right-column">
-                        <button class="button products__button-specifications" type="button"><span
-                                class="button__text button__text_hidden">Характеристики</span></button>
-                        <h3 class="title title_size_m products__title">Beats solo 3. цвет «Атласное серебро»</h3>
-                        <p class="subtitle products__subtitle">Беспроводные наушники Beats Solo3 готовы к работе в любой
-                            момент. Включите их и
-                            поднесите к своему iPhone — они мгновенно подключатся к нему.</p>
-                        <dl class="features products__features">
-                            <div class="features__item">
-                                <dt class="features__termin">Зарядка</dt>
-                                <dd class="features__description">2 часа</dd>
+                    <div class="slider products__slider">
+                        <div class="slider__item">
+                            <div class="products__left-column">
+                                <img class="products__img" src="img/headphones-atlas.png"
+                                    alt="Наушники Beats Solo 3. Цвет «Атласное серебро»">
                             </div>
-                            <div class="features__item">
-                                <dt class="features__termin">Вес</dt>
-                                <dd class="features__description">215 грамм</dd>
+                            <div class="products__right-column">
+                                <button class="button products__button-specifications" type="button"><span
+                                        class="button__text button__text_hidden">Характеристики</span></button>
+                                <h3 class="title title_size_m products__title">Beats solo 3. цвет «Атласное серебро»
+                                </h3>
+                                <p class="subtitle products__subtitle">Беспроводные наушники Beats Solo3 готовы к работе
+                                    в любой
+                                    момент. Включите их и
+                                    поднесите к своему iPhone — они мгновенно подключатся к нему.</p>
+                                <dl class="features products__features">
+                                    <div class="features__item">
+                                        <dt class="features__termin">Зарядка</dt>
+                                        <dd class="features__description">2 часа</dd>
+                                    </div>
+                                    <div class="features__item">
+                                        <dt class="features__termin">Вес</dt>
+                                        <dd class="features__description">215 грамм</dd>
+                                    </div>
+                                </dl>
+                                <div class="price">
+                                    <p class="price__value">14 990 ₽</p>
+                                    <button class="button price__button" type="button">Заказать</button>
+                                </div>
                             </div>
-                        </dl>
-                        <div class="price">
-                            <p class="price__value">14 990 ₽</p>
-                            <button class="button price__button" type="button">Заказать</button>
+                        </div>
+                        <div class="slider__item">
+                            <div class="products__left-column">
+                                <img class="products__img" src="img/headphones-solo.png"
+                                    alt="Наушники Beats Solo 3. Цвет «Атласное серебро»">
+                            </div>
+                            <div class="products__right-column">
+                                <button class="button products__button-specifications" type="button"><span
+                                        class="button__text button__text_hidden">Характеристики</span></button>
+                                <h3 class="title title_size_m products__title">Beats Solo Pro. Цвет «Красный цитрус»
+                                </h3>
+                                <p class="subtitle products__subtitle">Беспроводные наушники Solo Pro помогают
+                                    настроиться на творчество. Для этого предусмотрено два режима прослушивания: режим с
+                                    активным шумоподавлением и Прозрачный режим.</p>
+                                <dl class="features products__features">
+                                    <div class="features__item">
+                                        <dt class="features__termin">Зарядка</dt>
+                                        <dd class="features__description">2 часа</dd>
+                                    </div>
+                                    <div class="features__item">
+                                        <dt class="features__termin">Вес</dt>
+                                        <dd class="features__description">215 грамм</dd>
+                                    </div>
+                                </dl>
+                                <div class="price">
+                                    <p class="price__value">14 990 ₽</p>
+                                    <button class="button price__button" type="button">Заказать</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <button class="button-slider button-slider_prev" type="button"><span
+
+                    <!--<button class="button-slider slick-prev button-slider_prev" type="button"><span
                             class="button__text button__text_hidden">Назад</span></button>
                     <button class="button-slider button-slider_next" type="button"><span
-                            class="button__text button__text_hidden">Вперед</span></button>
+                            class="button__text button__text_hidden">Вперед</span></button>-->
                 </div>
             </section>
             <section class="team">
@@ -382,45 +418,42 @@
             <div class="map">
 
             </div>
-            <div class="container footer__container">
-                <div class="goodbye">
-                    <address class="contacts">
-                        <p class="address">Москва, ул. Новый Арбат, д. 31/12</p>
-                        <a class="link phone contacts__phone" href="tel:+78009039090">8 800 903 90 90</a>
-                    </address>
-                    <div class="social">
-                        <ul class="social__list">
-                            <li class="social__item">
-                                <a class="social__link" href="#">
-                                    <svg class="social__icon">
-                                        <use xlink:href="img/icons/social.svg#vkontakte"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social__item">
-                                <a class="social__link" href="#">
-                                    <svg class="social__icon">
-                                        <use xlink:href="img/icons/social.svg#facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social__item">
-                                <a class="social__link" href="#">
-                                    <svg class="social__icon">
-                                        <use xlink:href="img/icons/social.svg#instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social__item">
-                                <a class="social__link" href="#">
-                                    <svg class="social__icon">
-                                        <use xlink:href="img/icons/social.svg#telegram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
+            <div class="goodbye">
+                <address class="contacts">
+                    <p class="address">Москва, ул. Новый Арбат, д. 31/12</p>
+                    <a class="link phone contacts__phone" href="tel:+78009039090">8 800 903 90 90</a>
+                </address>
+                <div class="social">
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <svg class="social__icon">
+                                    <use xlink:href="img/icons/social.svg#vkontakte"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <svg class="social__icon">
+                                    <use xlink:href="img/icons/social.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <svg class="social__icon">
+                                    <use xlink:href="img/icons/social.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <svg class="social__icon">
+                                    <use xlink:href="img/icons/social.svg#telegram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
@@ -452,10 +485,12 @@
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/call.js"></script>
     <script src="js/payment.js"></script>
     <script src="js/menu_modal.js"></script>
     <script src="js/team.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 
 </html>

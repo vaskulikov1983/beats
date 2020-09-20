@@ -1,6 +1,6 @@
 .header {
     background-color: #f5f5f5;
-    padding: rem(24px) 0;
+    //padding: rem(24px) 0;
     @include tablets {
         padding: 0;
     }
@@ -9,6 +9,7 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
+        min-height: 10vh;
         @include tablets {
             min-height: 10vh;
             justify-content: space-between;

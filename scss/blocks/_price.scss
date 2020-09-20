@@ -27,6 +27,7 @@
         }
         @include phones {
             margin: 0 rem(14px);
+            width: 8rem;
         }
     }
 }

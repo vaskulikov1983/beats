@@ -3,9 +3,8 @@
     box-sizing: border-box;
     background: url('../img/map.jpg') no-repeat center;
     background-size: cover;
-    min-height: rem(652px);
-
-    @include tablets {
-        min-height: 100vh;
+    min-height: 90vh;
+    @include phones {
+        min-height: 85vh;
     }
 }

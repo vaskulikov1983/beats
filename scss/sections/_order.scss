@@ -1,13 +1,10 @@
 .order {
     background: #000;
     &__container {
-        padding-top: rem(68px);
-        padding-bottom: rem(85px);
-        @include tablets {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
     }
 
     &__title {
@@ -19,4 +16,3 @@
         }
     }
 }
-
