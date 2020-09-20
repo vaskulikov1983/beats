@@ -4,7 +4,7 @@
     
     &__container {
         /*padding-top: rem(66px);*/
-        padding-bottom: rem(50px);
+        padding-bottom: rem(20px);
         display: flex;
         justify-content: space-between;
         position: relative;
@@ -98,10 +98,6 @@
     }
 
     &__button {
-        margin-bottom: rem(72px);
-        @include tablets {
-
-        }
     }
 
     &__advantages-list {

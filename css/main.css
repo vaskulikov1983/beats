@@ -77,6 +77,7 @@ html {
   margin: 0 auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  min-height: 100vh;
 }
 
 @media screen and (max-width: 768px) {
@@ -1123,7 +1124,7 @@ html {
 
 .start-screen__container {
   /*padding-top: rem(66px);*/
-  padding-bottom: 3.125rem;
+  padding-bottom: 1.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1258,10 +1259,6 @@ html {
   .start-screen__subtitle {
     text-align: center;
   }
-}
-
-.start-screen__button {
-  margin-bottom: 4.5rem;
 }
 
 .start-screen__advantages-list {
@@ -2201,6 +2198,14 @@ html {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.reviews__item {
+  display: none;
+}
+
+.reviews__item_active {
+  display: block;
 }
 
 .video {

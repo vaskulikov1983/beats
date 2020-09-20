@@ -27,7 +27,7 @@
         display: block;
         overflow: hidden;
         &_active {
-            border: rem(4px) solid #e01f3d;
+           border: rem(4px) solid #e01f3d;
         }
     }
 
@@ -35,6 +35,7 @@
         width: 100%;
             height: 100%;
             object-fit: cover;
+            
     }
 }
 

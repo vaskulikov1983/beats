@@ -4,6 +4,7 @@
     padding: 0 rem(80px);
     margin: 0 auto;
     box-sizing: border-box;
+    min-height: 100vh;
     @include tablets {
         min-height: 100vh;
         padding: 0 rem(22px);
