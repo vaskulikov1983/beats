@@ -1,6 +1,5 @@
 .reviews {
     &__container {
-        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -11,7 +10,7 @@
     }
 
     &__blockquote {
-        margin-bottom: rem(16px);
+        //margin-bottom: rem(16px);
     }
 
     &__nav {
@@ -22,14 +21,28 @@
         list-style: none;
         margin: 0;
         padding: 0;
-
+        //на абсолютах
+        position: relative;
+        min-height: 260px;
+        /*padding: 2.625rem;
+        padding-bottom: 2.5rem;*/
+        background: #f8faf9;
+        margin-bottom: 40px;
     }
 
     &__item {
-        display: none;
+        //display: none;
+        //на абсолютах
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+
+        //on visually-hidden
+
         &_active {
-            display: block;
+            //display: block;
+            position: static;
         }
     }
-
 }

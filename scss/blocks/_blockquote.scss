@@ -1,7 +1,7 @@
 .blockquote {
     margin: 0;
     padding: rem(42px);
-    padding-bottom: rem(40px);
+    //padding-bottom: rem(40px);
     background: #f8faf9;
     display: flex;
     justify-content: flex-start;
@@ -16,7 +16,7 @@
 
     &__picture {
         margin-right: rem(40px);
-        width: 20%;
+        width: 30%;
         @include tablets {
             margin: 0;
         }
@@ -54,6 +54,9 @@
         line-height: 1.75rem;
         text-transform: none;
         margin-bottom: rem(27px);
+        @include phones {
+            text-align: center;
+        }
     }
 
     &__text {

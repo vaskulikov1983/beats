@@ -352,7 +352,6 @@ html {
 .blockquote {
   margin: 0;
   padding: 2.625rem;
-  padding-bottom: 2.5rem;
   background: #f8faf9;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -382,7 +381,7 @@ html {
 
 .blockquote__picture {
   margin-right: 2.5rem;
-  width: 20%;
+  width: 30%;
 }
 
 @media screen and (max-width: 768px) {
@@ -436,6 +435,12 @@ html {
   line-height: 1.75rem;
   text-transform: none;
   margin-bottom: 1.6875rem;
+}
+
+@media screen and (max-width: 480px) {
+  .blockquote__title {
+    text-align: center;
+  }
 }
 
 .blockquote__text {
@@ -1375,7 +1380,6 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100vh;
 }
 
 .promo__title {
@@ -1585,7 +1589,6 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100vh;
 }
 
 .products__left-column {
@@ -1920,7 +1923,6 @@ html {
 }
 
 .team__containter {
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2100,7 +2102,6 @@ html {
 .colors {
   background: url("../img/wooman-ball.jpg") no-repeat center;
   background-size: cover;
-  height: 100vh;
   position: relative;
 }
 
@@ -2168,7 +2169,6 @@ html {
 }
 
 .reviews__container {
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2186,10 +2186,6 @@ html {
   margin-bottom: 2rem;
 }
 
-.reviews__blockquote {
-  margin-bottom: 1rem;
-}
-
 .reviews__nav {
   margin: 0 auto;
 }
@@ -2198,14 +2194,23 @@ html {
   list-style: none;
   margin: 0;
   padding: 0;
+  position: relative;
+  min-height: 260px;
+  /*padding: 2.625rem;
+        padding-bottom: 2.5rem;*/
+  background: #f8faf9;
+  margin-bottom: 40px;
 }
 
 .reviews__item {
-  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
 }
 
 .reviews__item_active {
-  display: block;
+  position: static;
 }
 
 .video {
@@ -2223,7 +2228,6 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100vh;
 }
 
 .video__title {
@@ -2255,7 +2259,6 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100vh;
 }
 
 .order__title {
