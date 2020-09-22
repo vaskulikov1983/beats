@@ -1,6 +1,11 @@
 $(document).ready(() => { 
     const names = $('.team__name');
-    $('.team__name').on('click', evt => { 
+
+    //!on absolute
+    
+
+    //!on slideUp
+    /*$('.team__name').on('click', evt => { 
         let windowWidth = $(window).outerWidth();
         const name = $(evt.target);
         const spec = name.next();
@@ -31,7 +36,7 @@ $(document).ready(() => {
                 name.siblings().slideUp(150);
             }
         }     
-    })
+    })*/
 })
 
 /*const members = document.querySelectorAll('.team__name');

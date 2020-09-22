@@ -2052,6 +2052,7 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
 }
 
 @media screen and (max-width: 768px) {
@@ -2098,11 +2099,17 @@ html {
   }
 }
 
+.team__description {
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 100%;
+}
+
 .specialization {
   margin: 0;
   padding: 0;
   max-height: 100%;
-  display: none;
 }
 
 .specialization_active {

@@ -74,6 +74,7 @@
         padding-bottom: rem(30px);
         display: flex;
         flex-direction: column;
+        position: relative;
         @include tablets {
             display: flex;
             flex-direction: column;
@@ -104,5 +105,12 @@
         @include tablets {
             display: none;
         }
+    }
+
+    &__description {
+        height: 0;
+        overflow: hidden;
+        position: absolute;
+        top: 100%;
     }
 }
