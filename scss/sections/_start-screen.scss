@@ -3,7 +3,7 @@
 
     
     &__container {
-        /*padding-top: rem(66px);*/
+        padding-top: rem(20px);
         padding-bottom: rem(20px);
         display: flex;
         justify-content: space-between;
@@ -98,6 +98,7 @@
     }
 
     &__button {
+        margin-bottom: rem(20px);
     }
 
     &__advantages-list {

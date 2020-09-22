@@ -1144,7 +1144,7 @@ html {
 }
 
 .start-screen__container {
-  /*padding-top: rem(66px);*/
+  padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1282,6 +1282,10 @@ html {
   }
 }
 
+.start-screen__button {
+  margin-bottom: 1.25rem;
+}
+
 .start-screen__advantages-list {
   margin: 0;
   margin-top: auto;
@@ -1396,6 +1400,8 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .promo__title {
@@ -1605,6 +1611,8 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .products__left-column {
@@ -1949,6 +1957,8 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .team__title {
@@ -2195,6 +2205,8 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .reviews__title {
@@ -2223,10 +2235,12 @@ html {
   top: 0;
   left: 0;
   bottom: 0;
+  opacity: 0;
 }
 
 .reviews__item_active {
   position: static;
+  opacity: 1;
 }
 
 .video {
@@ -2244,6 +2258,8 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .video__title {
@@ -2275,6 +2291,8 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .order__title {
@@ -2315,7 +2333,7 @@ html {
           align-items: center;
   min-height: 10vh;
   max-width: 68.75rem;
-  padding: 0 5rem;
+  padding: 0.625rem 5rem;
   margin: 0 auto;
   /*@include phones {
         flex-direction: column;
@@ -2413,4 +2431,55 @@ html {
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.submit-overlay {
+  width: 100vw;
+  height: 100vh;
+  z-index: 20000;
+  background-color: rgba(48, 44, 44, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.submit-overlay__message {
+  width: 19.375rem;
+  height: 11rem;
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 1.25rem;
+}
+
+.submit-overlay__text {
+  margin: 0;
+  margin-bottom: 2.5rem;
+  padding: 0;
+  text-align: center;
+}
+
+.submit-overlay_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
