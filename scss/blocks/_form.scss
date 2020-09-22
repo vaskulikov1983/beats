@@ -121,6 +121,11 @@
         @include tablets {
             height: rem(36px);
         }
+        &_invalid {
+            &::placeholder {
+                color: #e01f3d;
+            }
+        }
     }
 
     &__radio {

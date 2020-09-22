@@ -1,0 +1,25 @@
+.submit-overlay {
+    width: 100vw;
+    height: 100vh;
+    z-index: 20000;
+    background-color: #313131;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__message {
+        width: rem(310px);
+        height: rem(176px);
+        background-color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__text {
+    }
+
+    &__button {
+    }
+}

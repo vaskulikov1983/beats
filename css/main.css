@@ -629,6 +629,22 @@ html {
   }
 }
 
+.form__input_invalid::-webkit-input-placeholder {
+  color: #e01f3d;
+}
+
+.form__input_invalid:-ms-input-placeholder {
+  color: #e01f3d;
+}
+
+.form__input_invalid::-ms-input-placeholder {
+  color: #e01f3d;
+}
+
+.form__input_invalid::placeholder {
+  color: #e01f3d;
+}
+
 .form__radio {
   display: none;
 }
@@ -2388,4 +2404,13 @@ html {
         @include tablets {
             min-height: rem(66px);
         }*/
+}
+
+.error-message {
+  width: 100%;
+  color: #e01f3d;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }

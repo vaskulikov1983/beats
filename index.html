@@ -384,11 +384,11 @@
                             <div class="form__contacts">
                                 <div class="form__name">
                                     <label class="form__label" for="name">Имя</label>
-                                    <input class="form__input" type="text" name="name" id="name">
+                                    <input class="form__input" type="text" name="name" id="name" required>
                                 </div>
                                 <div class="form__phone">
                                     <label class="form__label" for="phone">Телефон</label>
-                                    <input class="form__input" type="tel" name="phone" id="phone">
+                                    <input class="form__input" type="tel" name="phone" id="phone" required>
                                 </div>
                             </div>
                             <div class="form__street">
@@ -418,7 +418,7 @@
                         <div class="form__right-column">
                             <div class="form__comment">
                                 <label class="form__label" for="comment">Комментарий</label>
-                                <textarea class="form__textarea" name="comment" id="comment"></textarea>
+                                <textarea class="form__textarea" name="comment" id="comment" required></textarea>
                             </div>
                             <div class="form__payment">
                                 <div class="form__cash">
@@ -440,8 +440,8 @@
                                 </label>
                             </div>
                             <div class="form__buttons">
-                                <button class="button" type="submit">Заказать</button>
-                                <button class="button button_clean" type="reset">Очистить</button>
+                                <button class="button form__submit-button" type="submit">Заказать</button>
+                                <button class="button button_clean form__reset" type="reset">Очистить</button>
                             </div>
                         </div>
                     </form>
@@ -517,6 +517,12 @@
                 </li>
             </ul>
         </div>
+        <div class="submit-overlay">
+            <div class="submit-overlay__message">
+                <p class="submit-overlay__text">Сообщение отправлено</p>
+                <button class="submit-overlay__button">Закрыть</button>
+            </div>
+        </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -526,6 +532,7 @@
     <script src="js/team.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/reviews.js"></script>
+    <script src="js/form_submit.js"></script>
 </body>
 
 </html>
