@@ -13,33 +13,38 @@
         color: white;
     }
 
-    &__tabs {
+    /*&__tabs {
         display: flex;
         height: 100%;
         position: absolute;
         top: 0;
         right: 0;
-    }
+    }*/
 
     &__list {
+        list-style: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
         margin: 0;
         padding: 0;
-        list-style: none;
-        display: flex;
     }
 
     &__item {
-        width: rem(102px);
-        position: relative;
-        &:nth-child(1) {
+        //width: rem(102px);
+        //position: relative;
+        display: flex;
+        /*&:nth-child(1) {
             background: #999999;
         }
         &:nth-child(2) {
-            background: #151515;;
+            background: #151515;
         }
         &:nth-child(3) {
-            background: #E01F3C;
-        }
+            background: #e01f3c;
+        }*/
     }
 
     &__title-bookmark {
@@ -47,13 +52,26 @@
         font-style: normal;
         font-weight: bold;
         font-size: 2.25rem;
-        line-height: 2.6875rem;
-        width: rem(466px);
-        padding-left: rem(20px);
-        position: absolute;
-        top: 100%;
-        left: rem(30px);
-        transform-origin: 0 0;
-        transform: rotate(-90deg);
+        writing-mode: tb-rl;
+        transform: rotate(-180deg);
+        width: rem(102px);
+        display: flex;
+        align-items: center;
+        padding-top: rem(30px);
+        cursor: pointer;
+
+        &_grey {
+            background: #999999;
+        }
+        &_black {
+            background: #151515;
+        }
+        &_red {
+            background: #e01f3c;
+        }
+    }
+    &__content {
+        overflow: hidden;
+        width: 0;
     }
 }

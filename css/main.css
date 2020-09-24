@@ -2146,6 +2146,13 @@ html {
   background: url("../img/wooman-ball.jpg") no-repeat center;
   background-size: cover;
   position: relative;
+  /*&__tabs {
+        display: flex;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }*/
 }
 
 .colors__container {
@@ -2158,40 +2165,32 @@ html {
   color: white;
 }
 
-.colors__tabs {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
+.colors__list {
+  list-style: none;
   position: absolute;
   top: 0;
   right: 0;
-}
-
-.colors__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .colors__item {
-  width: 6.375rem;
-  position: relative;
-}
-
-.colors__item:nth-child(1) {
-  background: #999999;
-}
-
-.colors__item:nth-child(2) {
-  background: #151515;
-}
-
-.colors__item:nth-child(3) {
-  background: #E01F3C;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*&:nth-child(1) {
+            background: #999999;
+        }
+        &:nth-child(2) {
+            background: #151515;
+        }
+        &:nth-child(3) {
+            background: #e01f3c;
+        }*/
 }
 
 .colors__title-bookmark {
@@ -2199,16 +2198,37 @@ html {
   font-style: normal;
   font-weight: bold;
   font-size: 2.25rem;
-  line-height: 2.6875rem;
-  width: 29.125rem;
-  padding-left: 1.25rem;
-  position: absolute;
-  top: 100%;
-  left: 1.875rem;
-  -webkit-transform-origin: 0 0;
-          transform-origin: 0 0;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  -webkit-writing-mode: tb-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: tb-rl;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  width: 6.375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 1.875rem;
+  cursor: pointer;
+}
+
+.colors__title-bookmark_grey {
+  background: #999999;
+}
+
+.colors__title-bookmark_black {
+  background: #151515;
+}
+
+.colors__title-bookmark_red {
+  background: #e01f3c;
+}
+
+.colors__content {
+  overflow: hidden;
+  width: 0;
 }
 
 .reviews__container {
