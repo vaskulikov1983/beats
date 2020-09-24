@@ -2022,8 +2022,8 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -2044,7 +2044,6 @@ html {
   width: 13.75rem;
   cursor: pointer;
   margin: 0 0.625rem;
-  padding-bottom: 1.875rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2071,8 +2070,7 @@ html {
 }
 
 .team__img {
-  width: 13.75rem;
-  height: 18.125rem;
+  width: 100%;
   margin-bottom: 1.3125rem;
 }
 
@@ -2104,12 +2102,24 @@ html {
   overflow: hidden;
   position: absolute;
   top: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  /*&_active {
+            height: 100%;
+        }*/
+}
+
+@media screen and (max-width: 768px) {
+  .team__description {
+    overflow: visible;
+    position: static;
+    height: 100%;
+  }
 }
 
 .specialization {
   margin: 0;
   padding: 0;
-  max-height: 100%;
 }
 
 .specialization_active {

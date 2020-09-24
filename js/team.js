@@ -1,11 +1,45 @@
 $(document).ready(() => { 
-    const names = $('.team__name');
-
     //!on absolute
-    
+    $('.team__list').on('click', evt => { 
+        if ($(window).outerWidth() > 768) {
+            if ($(evt.target).hasClass('team__name')) {
+                const descriptionHeigth = $(evt.target).siblings('.team__description').find('.specialization').height();
+                if ($(evt.target).hasClass('team__name_active')) {
+                    $(evt.target).removeClass('team__name_active');
+                    $(evt.target).siblings('.team__description').height(0);
+                } else {
+                    $('.team__name').removeClass('team__name_active');
+                    $('.team__description').height(0);
+                    $(evt.target).siblings('.team__description').height(descriptionHeigth);
+                    $(evt.target).addClass('team__name_active');
+                }
+            }
+        } else { 
+            const names = $('.team__name');
+            const name = $(evt.target);
+            const descript = name.next();
+
+            if (!name.hasClass('team__name_active')) {
+                names.each((ndx, item) => {
+                    $(item).removeClass('team__name_active');
+                    $(item).siblings().slideUp(150);
+                });
+                name.addClass('team__name_active');
+                name.siblings('.team__description').css('margin-bottom', '20px');
+                name.siblings().slideDown(150);
+                name.siblings().find('.specialization').slideDown(150);
+            } else {
+                name.removeClass('team__name_active')
+                name.siblings().slideUp(150);
+                name.siblings().find('.specialization').slideUp(150);
+            }
+        }
+        
+    })
 
     //!on slideUp
-    /*$('.team__name').on('click', evt => { 
+    /*const names = $('.team__name');
+    $('.team__name').on('click', evt => { 
         let windowWidth = $(window).outerWidth();
         const name = $(evt.target);
         const spec = name.next();

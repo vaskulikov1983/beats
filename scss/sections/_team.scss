@@ -59,7 +59,7 @@
 
         list-style: none;
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: space-around;
         @include tablets {
             flex-direction: column;
@@ -71,7 +71,7 @@
         width: rem(220px);
         cursor: pointer;
         margin: 0 rem(10px);
-        padding-bottom: rem(30px);
+        //padding-bottom: rem(30px);
         display: flex;
         flex-direction: column;
         position: relative;
@@ -85,8 +85,7 @@
     }
 
     &__img {
-        width: rem(220px);
-        height: rem(290px);
+        width: 100%;
         margin-bottom: rem(21px);
 
         @include tablets {
@@ -112,5 +111,14 @@
         overflow: hidden;
         position: absolute;
         top: 100%;
+        transition: 0.3s;
+        @include tablets {
+            overflow: visible;
+            position: static;
+            height: 100%;
+        }
+        /*&_active {
+            height: 100%;
+        }*/
     }
 }
