@@ -13,14 +13,6 @@
         color: white;
     }
 
-    /*&__tabs {
-        display: flex;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        right: 0;
-    }*/
-
     &__list {
         list-style: none;
         position: absolute;
@@ -33,18 +25,7 @@
     }
 
     &__item {
-        //width: rem(102px);
-        //position: relative;
         display: flex;
-        /*&:nth-child(1) {
-            background: #999999;
-        }
-        &:nth-child(2) {
-            background: #151515;
-        }
-        &:nth-child(3) {
-            background: #e01f3c;
-        }*/
     }
 
     &__title-bookmark {
@@ -73,5 +54,12 @@
     &__content {
         overflow: hidden;
         width: 0;
+        position: relative;
+    }
+
+    &__text {
+        position: absolute;
+        margin: 0;
+        padding: 0;
     }
 }

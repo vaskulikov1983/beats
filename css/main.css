@@ -2146,13 +2146,6 @@ html {
   background: url("../img/wooman-ball.jpg") no-repeat center;
   background-size: cover;
   position: relative;
-  /*&__tabs {
-        display: flex;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        right: 0;
-    }*/
 }
 
 .colors__container {
@@ -2182,15 +2175,6 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /*&:nth-child(1) {
-            background: #999999;
-        }
-        &:nth-child(2) {
-            background: #151515;
-        }
-        &:nth-child(3) {
-            background: #e01f3c;
-        }*/
 }
 
 .colors__title-bookmark {
@@ -2229,6 +2213,13 @@ html {
 .colors__content {
   overflow: hidden;
   width: 0;
+  position: relative;
+}
+
+.colors__text {
+  position: absolute;
+  margin: 0;
+  padding: 0;
 }
 
 .reviews__container {
