@@ -26,6 +26,10 @@
 
     &__item {
         display: flex;
+        transition: 0.3s;
+        &_mobile {
+            order: 1;
+        }
     }
 
     &__title-bookmark {
@@ -40,6 +44,9 @@
         align-items: center;
         padding-top: rem(30px);
         cursor: pointer;
+        @include phones {
+            width: rem(90px);
+        }
 
         &_grey {
             background: #999999;
@@ -55,11 +62,41 @@
         overflow: hidden;
         width: 0;
         position: relative;
+        transition: 0.3s;
+        box-sizing: border-box;
+        &_active {
+            padding: rem(40px);
+            background-color: rgba(51, 53, 55, 0.9);
+            //width: rem(524px);
+        }
     }
 
     &__text {
-        position: absolute;
+        //position: absolute;
         margin: 0;
         padding: 0;
+        color: white;
+        font-size: rem(18px);
+        line-height: 150%;
+        font-family: 'Alegreya Sans', sans-serif;
+    }
+
+    &__close {
+        position: absolute;
+        top: 2%;
+        right: 2%;
+        background: none;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    &__icon {
+        fill: white;
+        width: rem(24px);
+        height: rem(24px);
+        &:hover {
+            fill: grey;
+        }
     }
 }

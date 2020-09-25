@@ -2175,6 +2175,14 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.colors__item_mobile {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
 .colors__title-bookmark {
@@ -2198,6 +2206,12 @@ html {
   cursor: pointer;
 }
 
+@media screen and (max-width: 480px) {
+  .colors__title-bookmark {
+    width: 5.625rem;
+  }
+}
+
 .colors__title-bookmark_grey {
   background: #999999;
 }
@@ -2214,12 +2228,44 @@ html {
   overflow: hidden;
   width: 0;
   position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.colors__content_active {
+  padding: 2.5rem;
+  background-color: rgba(51, 53, 55, 0.9);
 }
 
 .colors__text {
-  position: absolute;
   margin: 0;
   padding: 0;
+  color: white;
+  font-size: 1.125rem;
+  line-height: 150%;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+.colors__close {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.colors__icon {
+  fill: white;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.colors__icon:hover {
+  fill: grey;
 }
 
 .reviews__container {
