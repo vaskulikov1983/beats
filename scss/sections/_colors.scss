@@ -64,8 +64,10 @@
         position: relative;
         transition: 0.3s;
         box-sizing: border-box;
+        
         &_active {
-            padding: rem(40px);
+            //padding: rem(40px);
+
             background-color: rgba(51, 53, 55, 0.9);
             //width: rem(524px);
         }
@@ -78,7 +80,8 @@
         color: white;
         font-size: rem(18px);
         line-height: 150%;
-        font-family: 'Alegreya Sans', sans-serif;
+        font-family: "Alegreya Sans", sans-serif;
+        padding: rem(40px);
     }
 
     &__close {

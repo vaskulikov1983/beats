@@ -2235,7 +2235,6 @@ html {
 }
 
 .colors__content_active {
-  padding: 2.5rem;
   background-color: rgba(51, 53, 55, 0.9);
 }
 
@@ -2245,7 +2244,8 @@ html {
   color: white;
   font-size: 1.125rem;
   line-height: 150%;
-  font-family: 'Alegreya Sans', sans-serif;
+  font-family: "Alegreya Sans", sans-serif;
+  padding: 2.5rem;
 }
 
 .colors__close {

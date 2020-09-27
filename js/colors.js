@@ -7,10 +7,14 @@ $(document).ready(() => {
         const colorsItems = $('.colors__item');
         const colorsContents = $('.colors__content');
         const content = $(colorsItem).find('.colors__content');
+        
         const contentText = $(content).find('.colors__text');
+        const contentTextPadding = parseInt(contentText.css('padding'));
+        console.log(contentTextPadding);
         const windowWidth = $(window).outerWidth();
         const freeSpaceWidthDesktop = windowWidth - $('.colors__title-bookmark').width() * $('.colors__title-bookmark').length;
         const freeSpaceWidthMobile = windowWidth - $('.colors__title-bookmark').width();
+
         const isMobile = () => { 
             if (windowWidth >= 480) {
                 return false;
@@ -28,14 +32,21 @@ $(document).ready(() => {
                 colorsContents.removeClass('colors__content_active');
                 colorsItems.removeClass('colors__item_mobile');
                 colorsContents.outerWidth(0);
-                content.addClass('colors__content_active');
+                content.addClass('colors__content_active');                 
+                
                 if (isMobile()) {
                     colorsItem.addClass('colors__item_mobile');
+                    contentText.outerWidth(freeSpaceWidthMobile);
                     content.outerWidth(freeSpaceWidthMobile);
+                    
+                    
                 } else { 
+                     
                     if (freeSpaceWidthDesktop >= 524) {
+                        contentText.outerWidth(524);
                         content.outerWidth(524);
                     } else { 
+                        contentText.outerWidth(freeSpaceWidthDesktop/* - contentTextPadding * 2*/);
                         content.outerWidth(freeSpaceWidthDesktop);
                     }
                 }
