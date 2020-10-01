@@ -32,9 +32,9 @@ function onYouTubeIframeAPIReady() {
             showinfo: 0,
             modestbranding: 1,
             rel: 0,
-            autoplay: 0
+            autoplay: 0,
 
-            //'onReady': onPlayerReady,
+            'onReady': onPlayerReady,
             //'onStateChange': onPlayerStateChange
         }
     });
