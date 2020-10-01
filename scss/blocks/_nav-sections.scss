@@ -1,14 +1,64 @@
 .nav-sections {
     position: fixed;
-    top: rem(150px);
-    right: rem(0px);
-    &__list {
+    top: 30%;
+    right: 2%;
+    @include tablets {
+        display: none;
+    }
+    
+    &_white {
+        .nav-sections__item {
+            background-color: white;
+        }
 
+        .nav-sections__item_active::before {
+            border: 1px solid white;
+        }
+    }
+    
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
     }
 
     &__item {
+        margin-bottom: 16px;
+        position: relative;
+        //copy
+        width: 10px;
+        height: 10px;
+        background-color: #292929;
+        border-radius: 50%;
+        display: block;
+        position: relative;
+        &_active {
+            background-color: #E01F3D;
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 18px;
+                height: 18px;
+                border-radius: 50%;
+                border: 1px solid #E01F3D;
+                top: -50%;
+                left: -50%;
+            }
+        }
+        
     }
 
     &__link {
+        width: 10px;
+        height: 10px;
+        background-color: transparent;
+        border-radius: 50%;
+        display: block;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        
     }
+
 }

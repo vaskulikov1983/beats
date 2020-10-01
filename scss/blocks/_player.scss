@@ -1,0 +1,54 @@
+.player {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    &__controls {
+        width: 100%;
+        height: rem(36px);
+        background-color: #000000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 18px;
+        position: absolute;
+        bottom: 0;
+        box-sizing: border-box;
+    }
+
+    &__start {
+        cursor: pointer;
+        width: rem(16px);
+        height: rem(20px);
+        fill: #575757;
+        margin-right: 30px;
+    }
+
+    &__playback {
+        width: 100%;
+        height: 4px;
+        background-color: #333333;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    &__playback-button {
+        outline: none;
+        cursor: pointer;
+        border: none;
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: #333333;
+        margin: 0;
+        padding: 0;
+        left: 0;
+    }
+
+    &__duration {
+        color: #575757;
+        display: flex;
+        margin-left: 30px;
+    }
+}

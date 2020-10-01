@@ -3,6 +3,7 @@ html {font-family: 'Play', sans-serif;
     font-size: $baseFontSize;
     line-height: 1.1875rem;
     color: #292929;
+    height: 100%;
     //overflow-x: hidden;
 
     @include tablets {
