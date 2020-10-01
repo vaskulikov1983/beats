@@ -51,4 +51,11 @@
         display: flex;
         margin-left: 30px;
     }
+    &__duration-estimate {
+        white-space: nowrap;
+    }
+
+    &__duration-completed {
+        white-space: nowrap;
+    }
 }

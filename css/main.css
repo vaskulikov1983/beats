@@ -2500,6 +2500,14 @@ html {
   margin-left: 30px;
 }
 
+.player__duration-estimate {
+  white-space: nowrap;
+}
+
+.player__duration-completed {
+  white-space: nowrap;
+}
+
 .order {
   background: #000;
 }
