@@ -1,6 +1,7 @@
 .header {
     background-color: #f5f5f5;
     //padding: rem(24px) 0;
+    height: 10%;
     @include tablets {
         padding: 0;
     }
@@ -11,7 +12,6 @@
         align-items: center;
         min-height: 10vh;
         @include tablets {
-            min-height: 10vh;
             justify-content: space-between;
         }
     }

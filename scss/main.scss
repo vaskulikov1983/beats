@@ -5,6 +5,10 @@ $baseFontSize: 16px;
 $tablets: 768px;
 $phones: 480px;
 
+section {
+    height: 100%;
+}
+
 @import "media";
 @import "layout";
 @import "blocks/wrapper";
