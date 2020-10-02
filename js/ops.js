@@ -3,6 +3,8 @@ const footer = $('footer');
 const display = $('.maincontent');
 const sideMenu = $('.nav-sections');
 const menuItems = sideMenu.find('.nav-sections__item');
+const mobileDetect = new MobileDetect(window.navigator.userAgent);
+const isMobile = mobileDetect.mobile();
 let inScroll = false;
 
 sections.first().addClass('active');
@@ -111,6 +113,7 @@ $(window).on('keydown', evt => {
     }
 })
 
+$('.wrapper').on('touchmove', evt => evt.preventDefault());
 $('[data-scroll-to]').on('click', evt => {
     evt.preventDefault();
     const $this = $(evt.currentTarget);
@@ -119,3 +122,16 @@ $('[data-scroll-to]').on('click', evt => {
 
     perfomTransition(reqSection.index());
 })
+
+if (isMobile) { 
+    $('body').swipe( {
+        // https://github.com/mattbryson/TouchSwipe-Jquery-Plugin.git
+        swipe: function (event, direction) {
+            const scroller = viewportScroller();
+            let scrollDirection = "";
+            if (direction === "up") scrollDirection = 'next';
+            if (direction === "down") scrollDirection = 'prev';
+            scroller[scrollDirection]();
+        }
+      });
+}
