@@ -7,12 +7,27 @@ let eventsInit = () => {
 
         if (playerContainer.hasClass('paused')) {
             player.pauseVideo();
-            playerContainer.removeClass('paused');
+            
         } else {
-            playerContainer.addClass('paused');
+            
             player.playVideo();
         }
 
+    })
+    $('.player__playback').on('click', evt => { 
+        const bar = $(evt.currentTarget);
+        const clickedPosition = evt.originalEvent.layerX;
+        const newButtonPositionPercent = (clickedPosition / bar.width()) * 100;
+        const newPlaybackPositionSec = (player.getDuration() / 100) * newButtonPositionPercent;
+        $('.player__playback-button').css({
+            left: `${newButtonPositionPercent}%`
+        });
+        player.seekTo(newPlaybackPositionSec);
+
+    })
+    $('.player__splash').on('click', evt => { 
+        player.playVideo();
+        $('.player__splash').css('display', 'none');
     })
 }
 
@@ -39,8 +54,36 @@ const onPlayerReady = () => {
 
     interval = setInterval(() => {
         const completedSec = player.getCurrentTime();
+        const completedPercent = (completedSec / durationSec) * 100;
+        $('.player__playback-button').css({
+            left: `${completedPercent}%`
+        });
         $('.player__duration-completed').text(formatTime(completedSec));
     }, 1000);
+}
+
+const onPlayerStateChange = evt => { 
+
+    /*
+    -1 (воспроизведение видео не начато)
+    0 (воспроизведение видео завершено)
+    1 (воспроизведение)
+    2 (пауза)
+    3 (буферизация)
+    5 (видео подают реплики)
+    */
+    
+    switch (evt.data) { 
+        case 1:
+            playerContainer.addClass('active');
+            playerContainer.addClass('paused');
+            break;
+        case 2:
+            playerContainer.removeClass('active');
+            playerContainer.removeClass('paused');
+            break;
+
+    }
 }
 
 function onYouTubeIframeAPIReady() {
@@ -49,15 +92,23 @@ function onYouTubeIframeAPIReady() {
         width: '662',
         videoId: 'uCNWuSbPnt4',
         events: {
-            controls: 0,
+            /* controls: 0,
             disablekb: 0,
             showinfo: 0,
             modestbranding: 1,
             rel: 0,
-            autoplay: 0,
+            autoplay: 0, */
 
             'onReady': onPlayerReady,
-            //'onStateChange': onPlayerStateChange
+            'onStateChange': onPlayerStateChange
+        },
+        playerVars: {
+            controls: 0,
+            disablekb: 0,
+            showinfo: 0,
+            rel: 0,
+            autoplay: 0,
+            modestbranding: 0
         }
     });
 }

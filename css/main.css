@@ -2465,10 +2465,23 @@ html {
   margin-right: 30px;
 }
 
+.player__start_big {
+  width: 3rem;
+  height: 4.375rem;
+  fill: white;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.player__start_big:hover {
+  fill: #E01F3D;
+}
+
 .player__playback {
   width: 100%;
   height: 4px;
-  background-color: #333333;
+  background-color: #535353;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2476,6 +2489,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .player__playback-button {
@@ -2486,14 +2500,14 @@ html {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background-color: #333333;
+  background-color: #585858;
   margin: 0;
   padding: 0;
   left: 0;
 }
 
 .player__duration {
-  color: #575757;
+  color: #7a7a7a;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2506,6 +2520,26 @@ html {
 
 .player__duration-completed {
   white-space: nowrap;
+}
+
+.player__splash {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../img/player_splash.png") no-repeat center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
 }
 
 .order {

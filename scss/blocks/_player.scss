@@ -21,15 +21,28 @@
         height: rem(20px);
         fill: #575757;
         margin-right: 30px;
+        &_big{
+            width: rem(48px);
+            height: rem(70px);
+            fill: white;
+            
+            margin: 0;
+            padding: 0;
+            cursor: pointer;
+            &:hover {
+                fill: #E01F3D;
+            }
+        }
     }
 
     &__playback {
         width: 100%;
         height: 4px;
-        background-color: #333333;
+        background-color: #535353;
         position: relative;
         display: flex;
         align-items: center;
+        cursor: pointer;
     }
 
     &__playback-button {
@@ -40,14 +53,14 @@
         width: 16px;
         height: 16px;
         border-radius: 50%;
-        background-color: #333333;
+        background-color: #585858;
         margin: 0;
         padding: 0;
         left: 0;
     }
 
     &__duration {
-        color: #575757;
+        color: #7a7a7a;
         display: flex;
         margin-left: 30px;
     }
@@ -57,5 +70,20 @@
 
     &__duration-completed {
         white-space: nowrap;
+    }
+
+    &__splash {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url('../img/player_splash.png') no-repeat center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        
     }
 }
