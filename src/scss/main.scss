@@ -11,6 +11,10 @@ section {
 
 @import "media";
 @import "layout";
+@import "blocks/*.scss";
+@import "sections/*.scss";
+
+/*
 @import "blocks/wrapper";
 @import "blocks/maincontent";
 @import "blocks/fonts";
@@ -53,3 +57,4 @@ section {
 @import "sections/footer";
 @import "blocks/error-message";
 @import "blocks/submit-overlay"
+*/
